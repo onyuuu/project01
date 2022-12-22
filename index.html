@@ -1,0 +1,951 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>잡아바</title>
+	<meta charset='utf-8'>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Title' content='잡아바'>
+	<meta name='Subject' content='잡아바 클론코딩'>
+	<meta name='Keywords' content='html5, css3, 웹표준, 관공서, 잡아바'>
+	<meta name='Author' content='onyu'>
+	<meta name='Publisher' content='onyu'>
+	<meta name='Description' content='웹접근성, 웹표준을 준수한 잡아바 클론코딩'>
+	<meta name='Author-Date' content='2022/10/30'>
+	<meta name='Robots' content='index,follow'>
+
+	<link rel='stylesheet' href='./css/reset.css'>
+	<link rel='stylesheet' href='./css/style.css'>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=6e053450140995e1658d61018bce9f3e"></script>
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+	<ul id="skip">
+		<li><a href="#header">헤더 바로가기</a></li>
+		<li><a href="#nav">메뉴 바로가기</a></li>
+		<li><a href="#content">내용 바로가기</a></li>
+	</ul>
+
+
+<div id="wrap">
+	<header id="header">
+		<div class="top cf">
+			<div class="container">
+				<div class="left">
+					<ul class="cf">
+						<li><a href="#" title="경기도일자리재단">경기도일자리재단</a></li>
+						<li><a href="#" title="통합접수시스템">통합접수시스템</a></li>
+						<li><a href="#" title="청년지원사업 &middot; 청년몰">청년지원사업 &middot; 청년몰</a></li>
+						<li><a href="#" title="잡아바 청년센터">잡아바 청년센터</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul class="cf">
+						<li><a href="#" title="로그인">로그인</a></li>
+						<li><a href="#" title="회원가입">회원가입</a></li>
+						<li><a href="#" title="고객센터">고객센터</a></li>
+						<li><a href="#" title="상담사 전용">상담사 전용</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="title cf">
+			<div class="container">
+				<div class="logo">
+					<h1>
+						<a href="#"><img src="./img/잡아바홈화면/logo.png" alt="logo"></a><span>당신이 도전할 수 있는 기회, <span>40만개!</span></span>
+					</h1>
+				</div>
+				<div class="search"><a href="#" title="검색어를 입력하세요.">검색어를 입력하세요.</a></div>
+			</div>
+		</div>
+		<div class="nav nav_sticky">
+			<div class="bg">
+				<div class="container">
+					<div class="notice_bar">
+						<div class="container">
+							<div class="noticebar_left">
+								<span class="ico icon1"></span>
+								<strong>공지사항</strong>
+							</div>
+							<div class="noticebar_mid">
+								<span><a href="#" title="[공지] 잡아바 휴면 정책 시행 안내" target="_blank">[공지] 잡아바 휴면 정책 시행 안내</a></span>
+							</div>
+							<div class="noticebar_right">
+								<a href="#" title="구직등록">
+									<span class="ico icon2"></span>
+									<strong>구직등록</strong>
+								</a>
+								<a href="#" title="채용공고등록">
+									<span class="ico icon3"></span>
+									<strong>채용공고등록</strong>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<ul class="dep1 cf">
+					<li><a href="./index1.html" title="지원정책">지원정책</a>
+						<ul class="dep2">
+							<li><a href="#" title="일자리 지원사업">일자리 지원사업</a></li>
+							<li><a href="#" title="나를 위한 맞춤정책">나를 위한 맞춤정책</a></li>
+							<li><a href="#" title="정책활용 꿀팁">정책활용 꿀팁</a></li>
+							<li><a href="#" title="정책등록">정책등록</a></li>
+						</ul>
+					</li>
+					<li><a href="./index2.html" title="취업진단">취업진단</a>
+						<ul class="dep2">
+							<li><a href="#" title="직업선호도 진단">직업선호도 진단</a></li>
+							<li><a href="#" title="취업가능성 진단">취업가능성 진단</a></li>
+							<li><a href="#" title="취업준비도 진단">취업준비도 진단</a></li>
+							<li><a href="#" title="취업진로 진단검사">취업진로 진단검사</a></li>
+							<li><a href="#" title="NCS직업역량 진단">NCS직업역량 진단</a></li>
+						</ul>
+					</li>
+					<li><a href="./index3.html" title="비대면 취업지원">비대면 취업지원</a>
+						<ul class="dep2">
+							<li><a href="#" title="사전진단">사전진단</a></li>
+							<li><a href="#" title="진로, 취업상담">진로, 취업상담</a></li>
+							<li><a href="#" title="자기소개서 첨삭">자기소개서 첨삭</a></li>
+							<li><a href="#" title="AI 역량검사">AI 역량검사</a></li>
+							<li><a href="#" title="취업멘토링">취업멘토링</a></li>
+						</ul>
+					</li>
+					<li><a href="./index4.html" title="직업훈련">직업훈련</a>
+						<ul class="dep2">
+							<li><a href="#" title="취업교육">취업교육</a></li>
+							<li><a href="#" title="대외활동">대외활동</a></li>
+							<li><a href="#" title="동영상교육">동영상교육</a></li>
+							<li><a href="#" title="인적성, NCS교육">인적성 &middot; NCS교육</a></li>
+						</ul>
+					</li>
+					<li><a href="./index5.html" title="채용정보">채용정보</a>
+						<ul class="dep2">
+							<li><a href="#" title="채용공고">채용공고</a></li>
+							<li><a href="#" title="공공일자리">공공일자리</a></li>
+							<li><a href="#" title="탐나는기업관">탐나는기업관</a></li>
+							<li><a href="#" title="블라인드 채용">블라인드 채용</a></li>
+							<li><a href="#" title="온라인박람회">온라인박람회</a></li>
+							<li><a href="#" title="구직신청">구직신청</a></li>
+						</ul>
+					</li>
+					<li><a href="./index6.html" title="참여소통">참여소통</a>
+						<ul class="dep2">
+							<li><a href="#" title="잡학사전">잡학사전</a></li>
+							<li><a href="#" title="취업성공수기">취업성공수기</a></li>
+							<li><a href="#" title="공지사항">공지사항</a></li>
+							<li><a href="#" title="이벤트">이벤트</a></li>
+							<li><a href="#" title="Q&amp;A">Q&amp;A</a></li>
+						</ul>
+					</li>
+					<li class="bg_blue"><a href="./index7.html" title="기업지원">기업지원</a>
+						<ul class="dep2 bg_gray">
+							<li><a href="#" title="기업지원정책">기업지원정책</a></li>
+							<li><a href="#" title="기업인적성검사">기업인적성검사</a></li>
+							<li><a href="#" title="기업법정의무교육">기업법정의무교육</a></li>
+							<li><a href="#" title="채용공고등록">채용공고등록</a></li>
+							<li><a href="#" title="온라인박람회 참여">온라인박람회 참여</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main id="main">
+		<div class="slideArea">
+			<h2 class="ir_so">슬라이드배너</h2>
+			<div class="container">
+				<ul class="banner_list">
+					<li><a href="#" title="취업멘토링 상시EVENT">취업멘토링 상시EVENT</a></li>
+					<li><a href="#" title="대학생 취업브리지 참여자 모집">대학생 취업브리지 참여자 모집</a></li>
+					<li><a href="#" title="테마 채용관 오픈 EVENT!">테마 채용관 오픈 EVENT!</a></li>
+					<li><a href="#" title="잡아바, 네이버 자격증 연동">잡아바, 네이버 자격증 연동</a></li>
+					<li><a href="#" title="[정책꿀팁]청년 복지포인트 안내">[정책꿀팁]청년 복지포인트 안내</a></li>
+					<li><a href="#" title="중장년직무역량강화교육">중장년직무역량강화교육</a></li>
+					<li><a href="#" title="경기도 청년 복지포인트 3차 산업">경기도 청년 복지포인트 3차 산업</a></li>
+					<li><a href="#" title="경기도 청년기본소득 4분기 모집">경기도 청년기본소득 4분기 모집</a></li>
+				</ul>
+				<ul class="slideList">
+					<li><a href="#" title="메인슬라이드1"><img src="./img/잡아바홈화면/main_slide1.jpg" alt="mainslide1"></a></li>
+					<li><a href="#" title="메인슬라이드1"><img src="./img/잡아바홈화면/main_slide2.jpg" alt="mainslide2"></a></li>
+					<li><a href="#" title="메인슬라이드1"><img src="./img/잡아바홈화면/main_slide3.jpg" alt="mainslide3"></a></li>
+					<li><a href="#" title="메인슬라이드1"><img src="./img/잡아바홈화면/main_slide4.jpg" alt="mainslide4"></a></li>
+					<li><a href="#" title="메인슬라이드1"><img src="./img/잡아바홈화면/main_slide5.jpg" alt="mainslide4"></a></li>
+					<li><a href="#" title="메인슬라이드1"><img src="./img/잡아바홈화면/main_slide6.jpg" alt="mainslide4"></a></li>
+					<li><a href="#" title="메인슬라이드1"><img src="./img/잡아바홈화면/main_slide7.png" alt="mainslide4"></a></li>
+					<li><a href="#" title="메인슬라이드1"><img src="./img/잡아바홈화면/main_slide8.jpg" alt="mainslide4"></a></li>
+				</ul>
+				<div class="controlArea">
+					<a href="javascript:" class="btnSlidePrev"><span class="ir_pm">이전 배너 보기</span></a>
+					<a href="javascript:" class="btnSlideNext"><span class="ir_pm">다음 배너 보기</span></a>
+					<a href="javascript:" class="btnSlidepp"><span class="ir_pm">재생/정지</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="service">
+			<div class="container">
+				<div class="service_wrap cf">
+					<div class="service_list">
+						<ul>
+							<li>
+								<a href="index2.html">
+									<img src="./img/잡아바홈화면/quick_menu01.png" alt="취업진단 퀵메뉴">
+									<strong>취업진단</strong>
+								</a>
+							</li>
+							<li>
+								<a href="index2.html">
+									<img src="./img/잡아바홈화면/quick_menu02.png" alt="비대면 취업지원 퀵메뉴">
+									<strong>비대면 취업지원</strong>
+								</a>
+							</li>
+							<li>
+								<a href="index2.html">
+									<img src="./img/잡아바홈화면/quick_menu03.png" alt="자기소개서첨삭 퀵메뉴">
+									<strong>자기소개서첨삭</strong>
+								</a>
+							</li>
+							<li>
+								<a href="index2.html">
+									<img src="./img/잡아바홈화면/quick_menu04.png" alt="탐나는기업관 퀵메뉴">
+									<strong>탐나는기업관</strong>
+								</a>
+							</li>
+							<li>
+								<a href="index2.html">
+									<img src="./img/잡아바홈화면/quick_menu05.png" alt="온라인박람회 퀵메뉴">
+									<strong>온라인박람회</strong>
+								</a>
+							</li>
+							<li>
+								<a href="index2.html">
+									<img src="./img/잡아바홈화면/quick_menu06.png" alt="정책등록하기 퀵메뉴">
+									<strong>정책등록하기</strong>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="loginBox cf">
+						<fieldset>
+							<legend>로그인</legend>
+							<div class="loginBox_left">
+								<label for="userId">
+									<input type="text" name="userId" id="userId" placeholder="아이디">
+								</label>
+								<label for="userPw">
+									<input type="password" name="userPw" id=""userPw placeholder="비밀번호">
+								</label>
+							</div>
+							<div class="loginBox_right">
+								<input type="submit" value="로그인" id="loginBtn">
+							</div>
+							<div class="saveIdBtn">
+								<input type="checkbox" id="saveId" value="saveId">
+								<label for="saveId">아이디 저장</label>
+							</div>
+						</fieldset>
+						<div class="members cf">
+							<input type="radio" name="slide" id="userLogin" checked>
+							<input type="radio" name="slide" id="companyLogin">
+							<label for="userLogin" class="slide quickUser on">개인회원</label>
+							<label for="companyLogin" class="slide quickCompany">기업회원</label>
+							<div class="members_slide_tab"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="jobabaNews">
+			<div class="container">
+				<div class="jobabaNews_tit cf">
+					<h2>잡아바 소식</h2>
+					<span>&#8592; 1 / 3 &#8594;</span>
+				</div>
+				<div class="news_wrap">
+					<ul>
+						<li>
+							<div class="news_list1">
+								<a href="#">
+									<div class="news_con">
+										<p class="news_tit">[당첨자발표] 잡아바 탐나는기업 만족도 설문조사 참여 이벤트 당첨자 발표</p>
+										<p class="news_date">2022-12-21</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="news_con">
+										<p class="news_tit">[당첨자발표] 잡아바 온라인 테마 채용관 소문내기 EVENT 당첨자 발표</p>
+										<p class="news_date">2022-12-21</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="news_con">
+										<p class="news_tit">[당첨자발표] 잡아바 온라인 테마 채용관 오픈 EVENT 당첨자 발표</p>
+										<p class="news_date">2022-12-19</p>
+									</div>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="life_cycle">
+			<div class="container">
+				<h2>최신 일자리 정책/정보 모아보기</h2>
+				<div class="lc_wrap tabSet">
+					<div class="lc_wrap_tab tabs">
+						<div class="man"><a href="#panel01" class="on">청년</a></div>
+						<div class="woman"><a href="#panel02">여성</a></div>
+						<div class="old"><a href="#panel03">중장년</a></div>
+					</div>
+					<div class="panels">
+						<div class="panel" id="panel01">
+							<div class="lc_left">
+								<h3>청년
+									<span>(18~34세)</span>
+									<a href="#">전체보기 →</a>
+								</h3>
+								<div class="pop_tag">인기태그
+									<div class="tag">
+										<a href="#">#중소기업</a>
+										<a href="#">#예비창업자</a>
+										<a href="#">#경기도</a>
+										<a href="#">#코로나19</a>
+										<a href="#">#스타트업</a>
+										<a href="#">#입주기업</a>
+										<a href="#">#창업</a>
+										<a href="#">#지원기업</a>
+										<a href="#">#소상공인</a>
+										<a href="#">#컨설팅</a>
+									</div>
+								</div>
+								<div class="recomm">추천정보
+									<a href="#"><img src="./img/잡아바홈화면/lc_left_banner.jpg" alt=""></a>
+								</div>
+							</div>
+							<div class="lc_right">
+								<div class="lc_right_top">
+									<ul class="lc_right_top_list">
+										<li>
+											<a href="#">
+												<h3>출퇴근 교통비를 아끼고 싶다면?</h3>
+												<span class="badge best">BEST</span>
+												<div class="desc">알뜰교통카드 알아보기!</div>
+												<div class="date">2022-11-03 ~ 2022-12-05</div>
+												<img src="./img/잡아바홈화면/lc_right_top1.jpg" alt="출퇴근 교통비를 아끼고 싶다면?">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h3>청년월세 특별지원금 신청!</h3>
+												<span class="badge new">NEW</span>
+												<div class="desc">월 최대 20만원 지원</div>
+												<div class="date">2022-11-03 ~ 2022-12-05</div>
+												<img src="./img/잡아바홈화면/lc_right_top2.jpg" alt="청년월세 특별지원금 신청!">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h3>전세사기 피해 방지방안</h3>
+												<span class="badge hot">HOT</span>
+												<div class="desc">전세사기 멈춰!</div>
+												<div class="date">2022-11-03 ~ 2022-12-05</div>
+												<img src="./img/잡아바홈화면/lc_right_top3.jpg" alt="전세사기 피해 방지방안">
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="lc_right_bottom">
+									<ul>
+										<li>
+											<a href="#">
+												<img src="./img/잡아바홈화면/lc_right_bottom1.png" alt="2022년 경기도 청년기본소득 4분기">
+												<div class="lc_h3">
+													<h3>
+														<em>2022년 경기도 청년기본소득 4분기</em>
+														<div class="date">2022-11-01 ~ 2022-11-30</div>
+													</h3>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/잡아바홈화면/lc_right_bottom2.png" alt="「청색(靑色)」 메이커 경진대회 (2022-11-10~2022-12-07)">
+												<div class="lc_h3">
+													<h3>
+														<em>「청색(靑色)」 메이커 경진대회 (2022-11-10~2022-12-07)</em>
+														<div class="date">2022-11-10 ~ 2022-11-29</div>
+													</h3>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/잡아바홈화면/lc_right_bottom3.png" alt="2022년 3차 경기도 「청년 복지 포인트」 사업 대상자 모집 공고">
+												<div class="lc_h3">
+													<h3>
+														<em>2022년 3차 경기도 「청년 복지 포인트」 사업 대상자 모집 공고</em>
+														<div class="date">2022-11-01 ~ 2022-11-15</div>
+													</h3>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/잡아바홈화면/lc_right_bottom4.jpg" alt="[경기도] 경기도형 대학생 취업브리지 참여자 모집">
+												<div class="lc_h3">
+													<h3>
+														<em>[경기도] 경기도형 대학생 취업브리지 참여자 모집</em>
+														<div class="date">2022-10-31 ~ 2022-11-30</div>
+													</h3>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel" id="panel02">
+							<div class="lc_left">
+								<h3>여성
+									<span></span>
+									<a href="#">전체보기 →</a>
+								</h3>
+								<div class="pop_tag">인기태그
+									<div class="tag">
+										<a href="#">#창업동아리</a>
+										<a href="#">#워킹맘</a>
+										<a href="#">#정리수납</a>
+										<a href="#">#정리수납서비스</a>
+										<a href="#">#주거공간개선</a>
+										<a href="#">#창업교육</a>
+										<a href="#">#창업</a>
+										<a href="#">#경력단절여성</a>
+										<a href="#">#부천시</a>
+										<a href="#">#부천여성인력개발센터</a>
+									</div>
+								</div>
+								<div class="recomm">추천정보
+									<a href="#"><img src="./img/잡아바홈화면/lc_left_banner_woman.jpg" alt=""></a>
+								</div>
+							</div>
+							<div class="lc_right">
+								<div class="lc_right_top">
+									<ul class="lc_right_top_list">
+										<li>
+											<a href="#">
+												<h3>수당 종류 살펴보기</h3>
+												<span class="badge hot">HOT</span>
+												<div class="desc">주휴수당, 야근수당, 연차수당, 근로기준법</div>
+												<div class="date">2022-12-01 ~ 2023-01-18</div>
+												<img src="./img/잡아바홈화면/lc_right_top1_woman.jpg" alt="수당 종류 살펴보기">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h3>노동법 사전!</h3>
+												<span class="badge new">NEW</span>
+												<div class="desc">회사다니면서 부업으로 유튜버 해도 되나요?</div>
+												<div class="date">2022-12-01 ~ 2023-01-18</div>
+												<img src="./img/잡아바홈화면/lc_right_top2_woman.jpg" alt="노동법 사전!">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h3>여성장애인 출산비용 지원받자!</h3>
+												<span class="badge best">BEST</span>
+												<div class="desc">100만원 신청방법 총 정리!</div>
+												<div class="date">2022-12-01 ~ 2023-01-18</div>
+												<img src="./img/잡아바홈화면/lc_right_top3_woman.jpg" alt="여성장애인 출산비용 지원받자!">
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="lc_right_bottom">
+									<ul>
+										<li>
+											<a href="#">
+												<img src="./img/잡아바홈화면/lc_right_bottom1_woman.jpg" alt="경기도 산후조리비 지원사업">
+												<div class="lc_h3">
+													<h3>
+														<em>경기도 산후조리비 지원사업</em>
+														<div class="date">상시</div>
+													</h3>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/잡아바홈화면/lc_right_bottom2_woman.jpg" alt="2022년 경기광역새일센터 여성취업 박람회 꿈드림">
+												<div class="lc_h3">
+													<h3>
+														<em>2022년 경기광역새일센터 여성취업 박람회 꿈드림</em>
+														<div class="date">모집완료시</div>
+													</h3>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/잡아바홈화면/lc_right_bottom3_woman.png" alt="집단상담프로그램 기쁜내일 참여자 모집">
+												<div class="lc_h3">
+													<h3>
+														<em>집단상담프로그램 기쁜내일 참여자 모집</em>
+														<div class="date">상시</div>
+													</h3>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/잡아바홈화면/lc_right_bottom4_woman.jpg" alt="경기도 취업지원 디딤돌 동아리 모집">
+												<div class="lc_h3">
+													<h3>
+														<em>경기도 취업지원 디딤돌 동아리 모집</em>
+														<div class="date">모집완료시</div>
+													</h3>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="panel" id="panel03">
+							<div class="lc_left">
+								<h3>중장년
+									<span>(35~65세)</span>
+									<a href="#">전체보기 →</a>
+								</h3>
+								<div class="pop_tag">인기태그
+									<div class="tag">
+										<a href="#">#중소기업</a>
+										<a href="#">#예비창업자</a>
+										<a href="#">#경기도</a>
+										<a href="#">#코로나19</a>
+										<a href="#">#스타트업</a>
+										<a href="#">#입주기업</a>
+										<a href="#">#창업</a>
+										<a href="#">#지원기업</a>
+										<a href="#">#소상공인</a>
+										<a href="#">#컨설팅</a>
+									</div>
+								</div>
+								<div class="recomm">추천정보
+									<a href="#"><img src="./img/잡아바홈화면/lc_left_banner_old.jpg" alt=""></a>
+								</div>
+							</div>
+							<div class="lc_right">
+								<div class="lc_right_top">
+									<ul class="lc_right_top_list">
+										<li>
+											<a href="#">
+												<h3>국민취업지원제도!</h3>
+												<span class="badge hot">HOT</span>
+												<div class="desc">고용노동부가 직접 답변해드립니다!</div>
+												<div class="date">2022-12-01 ~ 2023-01-18</div>
+												<img src="./img/잡아바홈화면/lc_right_top1_old.jpg" alt="국민취업지원제도!">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h3>고용보험료, 얼마나 내야 하나요?</h3>
+												<span class="badge best">BEST</span>
+												<div class="desc">일하는 누구나 당연하고 당당하게!</div>
+												<div class="date">2022-12-01 ~ 2023-01-18</div>
+												<img src="./img/잡아바홈화면/lc_right_top2_old.jpg" alt="고용보험료, 얼마나 내야 하나요?">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h3>연말정산 꿀팁!</h3>
+												<span class="badge hot">HOT</span>
+												<div class="desc">똑똑하게 준비해서 13월의 월급 받아보세요!</div>
+												<div class="date">2022-12-01 ~ 2023-01-18</div>
+												<img src="./img/잡아바홈화면/lc_right_top3_old.jpg" alt="연말정산 꿀팁!">
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="lc_right_bottom">
+									<ul>
+										<li>
+											<a href="#">
+												<img src="./img/잡아바홈화면/lc_right_bottom1_old.jpg" alt="중장년(4060) 맞춤형 재취업지원 프로그램">
+												<div class="lc_h3">
+													<h3>
+														<em>중장년(4060) 맞춤형 재취업지원 프로그램</em>
+														<div class="date">2022-01-01 ~ 2022-12-30</div>
+													</h3>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/잡아바홈화면/lc_right_bottom2_old.jpg" alt="시니어인턴십 참여희망기업 및 지원자 모집(인지어스 유한회사 성남지사)">
+												<div class="lc_h3">
+													<h3>
+														<em>시니어인턴십 참여희망기업 및 지원자 모집(인지어스 유한회사 성남지사)</em>
+														<div class="date">상시</div>
+													</h3>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/잡아바홈화면/lc_right_bottom3_old.jpg" alt="경기도 신중년 일자리센터 오픈">
+												<div class="lc_h3">
+													<h3>
+														<em>경기도 신중년 일자리센터 오픈</em>
+														<div class="date">상시</div>
+													</h3>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/잡아바홈화면/lc_right_bottom4_old.png" alt="보건복지부, 한국노인인력개발원 시니어인턴십">
+												<div class="lc_h3">
+													<h3>
+														<em>보건복지부, 한국노인인력개발원 시니어인턴십</em>
+														<div class="date">2022-05-10 ~ 2022-12-31</div>
+													</h3>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ncs_edu">
+			<div class="container">
+				<div class="ncs_edu_slbtn_left"></div>
+				<div class="ncs_edu_slbtn_right"></div>
+				<h2>무료로 듣는 NCS역량강화 교육</h2>
+				<div class="tab">
+					<a href="#" title="대인관계능력"><span class="tab1">#대인관계능력</span></a>
+					<a href="#" title="자기개발능력"><span class="tab2">자기개발능력</span></a>
+					<a href="#" title="의사소통능력"><span class="tab3">의사소통능력</span></a>
+					<a href="#" title="문제해결능력"><span class="tab4">문제해결능력</span></a>
+					<a href="#" title="자원관리능력"><span class="tab5">자원관리능력</span></a>
+					<a href="#" title="조직이해능력 및 직업윤리"><span class="tab6">조직이해능력 및 직업윤리</span></a>
+				</div>
+				<div class="ncs_box ncs_box1">
+					<div>창의적사고와 문제해결 리더십</div>
+					<div class="lecture">
+						<a href="#" title="1강 팀워크"><span>1강</span>팀워크</a>
+						<a href="#" title="2강 리더십"><span>2강</span>리더십</a>
+						<a href="#" title="3강 갈등관리"><span>3강</span>갈등관리</a>
+					</div>
+				</div>
+				<div class="ncs_box ncs_box2">
+					<div>원만한 대인관계 기법</div>
+					<div class="lecture">
+						<a href="#" title="1강 원만한 대인관계 기법"><span>1강</span>원만한 대인관계 기법</a>
+					</div>
+				</div>
+				<div class="ncs_box ncs_box3">
+					<div>프로페셔널 비서과정</div>
+					<div class="lecture">
+						<a href="#" title="1강 비서의 핵심역량과 역할"><span>1강</span>비서의 핵심역량과 역할</a>
+						<a href="#" title="2강 전문비서의 자질(비즈니스 매너)"><span>2강</span>전문비서의 자질(비즈니스 매너)</a>
+						<a href="#" title="2강 비서의 효율적인 업무관리"><span>3강</span>비서의 효율적인 업무관리</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="job_edu">
+			<div class="container">
+				<h2>개인 역량강화를 위한 직업교육 HOT</h2>
+				<a href="#" title="취향저격 보이스 코칭">
+					<img src="./img/잡아바홈화면/job_edu1.jpg" alt="취향저격 보이스 코칭">
+					<span class="hour">3시간</span>
+					<span>BEST</span>
+					<h3>취향저격 보이스 코칭</h3>
+				</a>
+				<a href="#" title="최신 취업 트렌드 완전정복">
+					<img src="./img/잡아바홈화면/job_edu2.jpg" alt="최신 취업 트렌드 완전정복">
+					<span class="hour">8시간</span>
+					<span>HOT</span>
+					<h3>최신 취업 트렌드 완전정복</h3>
+				</a>
+				<a href="#" title="일 잘하기 위한 8가지 원리">
+					<img src="./img/잡아바홈화면/job_edu3.jpg" alt="일 잘하기 위한 8가지 원리">
+					<span class="hour">8시간</span>
+					<span>HOT</span>
+					<h3>일 잘하기 위한 8가지 원리</h3>
+				</a>
+				<a href="#" title="비즈니스 실무영작">
+					<img src="./img/잡아바홈화면/job_edu4.jpg" alt="비즈니스 실무영작">
+					<span class="hour">9시간</span>
+					<span>BEST</span>
+					<h3>비즈니스 실무영작</h3>
+				</a>
+			</div>
+		</div>
+		<div class="announce">
+			<div class="container">
+				<div class="pop_ann">
+					<h2>인기 채용공고</h2>
+					<span><a href="#">&#8592;</a> 1/2 <a href="#">&#8594;</a></span>
+					<div class="pop_ann1">
+						<div class="ann_box">
+							<a href="#">
+								<div class="com_nm">모바일앱개발협동조합</div>
+								<div class="heart"></div>
+								<div class="job_tit">모바일앱개발협동조합 (SW개발)</div>
+								<div class="condition">회사내규에 따름 / 인턴직 / 신입 / 학력무관</div>
+								<hr>
+								<div class="due_date">D-15 (~11월 30일)</div>
+							</a>
+						</div>
+						<div class="ann_box">
+							<a href="#">
+								<div class="com_nm">(주)에어로맥스</div>
+								<div class="heart"></div>
+								<div class="job_tit">기계 &middot; 기계설비 Field service engineer (기계, 기계설비外 1개 부문)</div>
+								<div class="condition">4000 ~ 5000만원 / 정규직 / 신입/경력 / 고졸,대졸(2~3년),대졸(4년)</div>
+								<hr>
+								<div class="due_date">D-136 (~03월 31일)</div>
+							</a>
+						</div>
+					</div>
+					<div class="pop_ann2">
+						<div class="ann_box">
+							<a href="#">
+								<div class="com_nm">(주)테키스트</div>
+								<div class="heart"></div>
+								<div class="job_tit">(주)테키스트 (반도체 장비 유지보수)</div>
+								<div class="condition">회사내규에 따름 / 인턴직 / 신입 / 학력무관</div>
+								<hr>
+								<div class="due_date">D-15 (~11월 30일)</div>
+							</a>
+						</div>
+						<div class="ann_box">
+							<a href="#">
+								<div class="com_nm">베스트에듀</div>
+								<div class="heart"></div>
+								<div class="job_tit">시니어 전문/실버 프로그램 강사 모집</div>
+								<div class="condition">회사내규에 따름 / 계약직 / 신입/경력 / 대졸(2~3년),대졸(4년)</div>
+								<hr>
+								<div class="due_date">D-12 (~11월 27일)</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="pop_ann new_ann">
+					<h2>신규 채용공고</h2>
+					<span><a href="#">&#8592;</a> 1/2 <a href="#">&#8594;</a></span>
+					<div class="pop_ann1">
+						<div class="ann_box">
+							<a href="#">
+								<div class="com_nm">디토닉(주)</div>
+								<div class="heart"></div>
+								<div class="job_tit">디토닉(주) 빅데이터 및 웹응용자사솔루션 개발자 모집</div>
+								<div class="condition">회사내규에 따름 / 정규직 / 경력 / 학력무관</div>
+								<hr>
+								<div class="due_date">D-12 (~11월 30일)</div>
+							</a>
+						</div>
+						<div class="ann_box">
+							<a href="#">
+								<div class="com_nm">(주)영광산업</div>
+								<div class="heart"></div>
+								<div class="job_tit">(주)영광산업 단순 생산직(인쇄) 사원 모집</div>
+								<div class="condition">회사내규에 따름 / 정규직 / 신입/경력 / 학력무관</div>
+								<hr>
+								<div class="due_date">D-5 (~11월 23일)</div>
+							</a>
+						</div>
+					</div>
+					<div class="pop_ann2">
+						<div class="ann_box">
+							<a href="#">
+								<div class="com_nm">(주)명성세미트론</div>
+								<div class="heart"></div>
+								<div class="job_tit">(주)명성세미트론 사출품 육안 검사원 모집</div>
+								<div class="condition">회사내규에 따름 / 정규직 / 신입/경력 / 학력무관</div>
+								<hr>
+								<div class="due_date">D-43 (~12월 31일)</div>
+							</a>
+						</div>
+						<div class="ann_box">
+							<a href="#">
+								<div class="com_nm">디토닉(주)</div>
+								<div class="heart"></div>
+								<div class="job_tit">디토닉(주) 공공프로젝트 기획 및 제작 모집</div>
+								<div class="condition">회사내규에 따름 / 정규직 / 신입/경력 / 학력무관</div>
+								<hr>
+								<div class="due_date">D-43 (~12월 31일)</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mid_banner">
+			<div class="container">
+				<a href="#"><img src="./img/잡아바홈화면/pc-middle.jpg" alt="취업진로진단검사 바로가기"></a>
+			</div>
+		</div>
+		<div class="covetous">
+			<div class="container">
+				<h2>이번주 탐나는 기업 TOP30</h2>
+				<a href="#" title="이번주 탐나는 기업 전체보기"><span>전체보기 &#8594;</span></a>
+					<div class="top30_all">
+						<a href="#" class="top30_list">
+							<h3>(주)비알인포텍</h3>
+							<div class="heart"></div>
+							<p>정보통신공사,CCTV,전기공사 영업지원</p>
+							<div class="top30_logo">
+								<img src="" alt="">
+							</div>
+						</a>
+						<a href="#" class="top30_list">
+							<h3>(주)굿센스</h3>
+							<div class="heart"></div>
+							<p>웹디자이너 구합니다(경력직)</p>
+						</a>
+						<a href="#" class="top30_list">
+							<h3>(주)티제이텍</h3>
+							<div class="heart"></div>
+							<p>회로카드검사자(육안검사자) 모집합니다.</p>
+						</a>
+						<a href="#" class="top30_list">
+							<h3>(주)동일캔바스엔지니어링</h3>
+							<div class="heart"></div>
+							<p>환경 / 플랜트 사업부 설계, 사업관리, 현장공ㅇㅇㅇㅇㅇ</p>
+						</a>
+						<a href="#" class="top30_list">
+							<h3>알에프시스템즈(주)</h3>
+							<div class="heart"></div>
+							<p>생산직 모집 (브레이징)</p>
+						</a>
+					</div>
+			</div>
+		</div>
+		<div class="video_news">
+			<div class="container cf">
+				<div class="video_news_title">
+					<h2>동영상으로 보는 일자리 소식</h2>
+					<a href="#">
+						<i class="fa-brands fa-youtube"></i>
+						<span>잡아바 유튜브 구독</span>
+					</a>
+				</div>
+				<div class="video_news_list">
+					<div class="video_news_list_box">
+						<a href="#">
+							<img src="./img/잡아바홈화면/video_news1.jpg" alt="잡아바 탐나는기업 홍보영상 나아바코리아">
+							<h3>잡아바 탐나는기업 홍보영상</h3>
+							<p>[나아바코리아]살아 숨쉬는 기업</p>
+						</a>
+					</div>
+					<div class="video_news_list_box">
+						<a href="#">
+							<img src="./img/잡아바홈화면/video_news2.jpg" alt="잡아바 탐나는기업 홍보영상 (주)앤씨앤">
+							<h3>잡아바 탐나는기업 홍보영상</h3>
+							<p>[(주)앤씨앤]최고의 가치를 제공합니다</p>
+						</a>
+					</div>
+					<div class="video_news_list_box">
+						<a href="#">
+							<img src="./img/잡아바홈화면/video_news3.jpg" alt="잡아바 탐나는기업 홍보영상 쏘닉스">
+							<h3>잡아바 탐나는기업 홍보영상</h3>
+							<p>[쏘닉스]끊임없는 발전기업!</p>
+						</a>
+					</div>
+					<div class="video_news_list_box">
+						<a href="#">
+							<img src="./img/잡아바홈화면/video_news4.jpg" alt="잡아바 탐나는기업 홍보영상 이든팜">
+							<h3>잡아바 탐나는기업 홍보영상</h3>
+							<p>[이든팜]한방울의 힘</p>
+						</a>
+					</div>
+				</div>
+				<div class="slide_circle cf">
+					<span class="slide_circle1"></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div id="map" style="width:1260px;height:350px;margin:0 auto"></div>
+<br><br>
+	<footer id="footer">
+		<div class="container">
+			<div class="fnb_wrap cf">
+				<div class="fnb">
+					<ul>
+						<li><a href="#" title="경기도일자리재단">경기도일자리재단</a></li>
+						<li><a href="#" title="이용약관">이용약관</a></li>
+						<li><a href="#" title="개인정보처리방침"><span>개인정보처리방침</span></a></li>
+						<li><a href="#" title="API신청">API신청</a></li>
+					</ul>
+				</div>
+				<div class="family_site">
+					<select name="familySite" id="familySite" title="Family Site">
+						<option value>Family Site</option>
+						<option value>경기도일자리재단</option>
+						<option value>통합접수시스템</option>
+						<option value>청년노동자사지원사업&middot;청년몰</option>
+						<option value>꿈날개</option>
+						<option value>꿈마루</option>
+						<option value>경기도기술학교</option>
+						<option value>경기도 워라밸 링크</option>
+						<option value>잡아바 청년센터</option>
+					</select>
+					<div class="family_site_arr"></div>
+				</div>
+			</div>
+			<div class="f_num_area cf">
+				<div class="num_logo"></div>
+				<div class="f_info_area">
+					<p>사업별 문의안내</p>
+					<p>평일 : 09:00 ~ 18:00</p>
+					<p>토,일요일 및 법정공휴일 휴무</p>
+				</div>
+				<div class="f_number">
+					<div class="num_left">
+						<span class="num_left_tit">경기도 청년노동자 지원사업</span>
+						<span class="bold_num">1577 - 0014</span>
+						<span class="num_left_tit">경기도 일자리재단 사업문의</span>
+						<span class="bold_num">031 - 270 - 9600</span>
+						<span class="num_left_tit">경기 여성 취업지원금 문의</span>
+						<span class="bold_num">1522 - 3582</span>
+						<span class="num_left_tit">청년면접수당</span>
+						<span class="bold_num">1877 - 2046</span>
+					</div>
+					<div class="num_right">
+						<span class="num_left_tit">청년기본소득 사업문의</span>
+						<span class="bold_num">031 - 120</span>
+						<span class="num_left_tit">청년기본소득 시스템문의</span>
+						<span class="bold_num">1522 - 8667</span>
+						<span class="num_left_tit">경기지역화폐 카드문의</span>
+						<span class="bold_num">1899 - 7997</span>
+					</div>
+				</div>
+				<div class="f_sns">
+					<a href="#" class="slogan" title="경기도 슬로건" target="_blank"></a>
+					<div class="sns_list">
+						<a href="#" title="facebook" target="_blank"><span class="facebook"></span></a>
+						<a href="#" title="insta" target="_blank"><span class="insta"></span></a>
+						<a href="#" title="youtube" target="_blank"><span class="youtube"></span></a>
+						<a href="#" title="appstore" target="_blank"><span class="appstore"></span></a>
+						<a href="#" title="playstore" target="_blank"><span class="playstore"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
