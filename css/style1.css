@@ -78,100 +78,37 @@
 
 
 /* 본문영역 */
-.list_wrap{background: rgb(172, 212, 168); width: 100%; height: 5273px; margin: 80px auto 0;}
-.list_category{width: 260px; height: 100%; background: rgb(255, 231, 204); float: left; margin-right: 40px;}
 
-.sinario_btn{font-size: 16px; letter-spacing: -1px; background: rgb(245, 245, 245); width: 100%; height: 60px; border-radius: 5px; line-height: 60px; margin-bottom: 20px;}
-.sinario_btn a{position: relative;}
-.sinario_btn a .arr{background: red url(../img/잡아바홈화면/arrow_slick.png) no-repeat; width: 15px; height: 20px; position: absolute; top: 0; right: 0;}
-
-.btn_area{width: 100%; height: 34px;}
-.btn_area a.reset{background: #fff; margin-right: 6px; border: 1px solid gray; color: rgb(66, 66, 66);}
-.btn_area a.reset span{width: 12px; height: 14px;}
-.btn_area a{float: left; text-align: center; border: 1px solid #38bab2; border-radius: 5px; background: #38bab2;width: 127px; height: 32px; line-height: 30px; color: #fff; font-size: 14px;}
-hr{border-style: none; background: rgb(223, 223, 223); width: 260px; height: 1px; margin: 20px 0;}
-
-
-.s_tit{font-size: 18px; font-weight: bold; margin-bottom: 15px;}
-.category_area ul{font-size: 14px; color: rgb(63, 63, 63);}
-.category_area.b_t ul li{margin: 10px 0;}
-
-
-
-.category_area.region li{float: left; width: 100px; margin-bottom: 20px;}
-.category_area.region li a{font-size: 14px; color: rgb(73, 73, 73); }
-.category_area.region li a input{width: 22px; height: 22px; border: 1px solid red; margin-right: 5px; position: relative;}
-.category_area.region li a input span{position: absolute; left: 0; top: 10px;}
-
-.target{}
-.target ul{}
-.target ul li{}
-.target ul li a{}
-.target ul li a input{}
-.target ul li a input span{}
+.inner{position: relative; padding: 0 20px; max-width: 1160px; height: 100%; margin: 0 auto;}
+.themeWrap{}
+.themeWrap .visualWrap{width: 100%; height: 1130px; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_bg01.png) top no-repeat; background-size: cover; padding: 80px 0;}
+.themeWrap .visualWrap .leftMenu{}
+.themeWrap .visualWrap .inner{}
+.themeWrap .visualWrap .inner .titWrap{}
+.themeWrap .visualWrap .inner .titWrap p{}
+.themeWrap .visualWrap .inner .titWrap p strong{color: #fff; font-size: 48px; font-weight: bold; letter-spacing: -1px; background: #383633; border-radius: 10px; padding: 0 20px 10px; transform: rotateZ('-3deg'); display: block; position: relative;}
+.themeWrap .visualWrap .inner .titWrap p strong span{color: #ff95c7;}
+.themeWrap .visualWrap .inner .titWrap ul{}
+.themeWrap .visualWrap .inner .titWrap ul li{}
+.themeWrap .visualWrap .inner .titWrap ul li span{}
+.themeWrap .visualWrap .inner .contentsWrap{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .con_titWrap{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .con_titWrap p{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .con_titWrap span{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .con_titWrap span strong{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li.new{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li a{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li a .imgWrap{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li a .imgWrap img{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li a p{}
 
 
 
 
-
-
-.hot_tit{}
-.hot_tit_date{}
-
-
-.list_con_wrap{width: 960px; height: 100%; background: rgb(221, 241, 195); float: left; padding-left: 20px;}
-.list_con_wrap .tit{font-size: 24px; margin-bottom: 40px;}
-.hot_wrap_con{float: left; margin-right: 20px;}
-.hot_wrap_con:last-child{margin-right:0;}
-.hot_wrap_con img{border-radius: 10px;}
-.hot_wrap_con span{display: block; width: 40px; height: 20px; border: 1px solid #fc7a5a; border-radius: 20px; text-align: center; font-size: 10px; line-height: 20px; color: #fc7a5a; margin: 15px 0 10px 0;}
-.hot_wrap_con .hot_tit{font-size: 20px; letter-spacing: -1px; margin-bottom: 10px;}
-.hot_wrap_con .hot_tit_date{font-size: 14px; color: rgb(95, 95, 95);}
-
-
-.check_picked{}
-.check_picked div{border: 1px solid gainsboro; margin: 60px 0 10px 0; padding: 30px 25px; border-radius: 10px;}
-.check_picked div span{background: rgb(231, 231, 231); border: 1px solid gainsboro; border-radius: 5px; padding: 10px; font-size: 14px;}
-
-.btn_area2{}
-.btn_area2_float{float: right;}
-.btn_area2 a.reset{background: #fff; margin-right: 6px; border: 1px solid gray; color: rgb(66, 66, 66);}
-.btn_area2 a.reset span{width: 12px; height: 14px;}
-.btn_area2 a{float: left; text-align: center; border: 1px solid #38bab2; border-radius: 5px; background: #38bab2;width: 100px; height: 32px; line-height: 30px; color: #fff; font-size: 14px; letter-spacing: -1px;}
-
-.select_wrap{}
-.select_wrap .recent_select{}
-.select_wrap .num_select{}
-
-.tag_area{width: 100%; height: 81px; background: rgb(255, 255, 255);}
-.tag_area .category_ul{}
-.tag_area .category_ul li{float: left;}
-.tag_area .category_ul li span{}
-
-
-.pop_tags_wrap{width: 100%; height: 28px; background: rgb(209, 189, 230); padding-bottom: 20px; border-bottom: 1px solid rgb(255, 45, 45);}
-.pop_tags_wrap{}
-.pop_tags_wrap p{float: left;}
-.pop_tags_wrap ul{float: right;}
-.pop_tags_wrap ul li{float: left;}
-.pop_tags_wrap ul li a{}
-
-
-.list_area{}
-.list_wrap{}
-.list_wrap ul{}
-.list_wrap ul li{padding: 10px 0;}
-.list_wrap ul li a{width: 100%; height: 133px;}
-.list_wrap ul li a img{float: left; width: 160px; height: 120px; margin-right: 20px; border-radius: 10px; object-fit: cover;}
-.list_wrap ul li a .img_right_text{float: left;}
-.list_wrap ul li a .img_right_text p{font-size: 14px;}
-.list_wrap ul li a .img_right_text p.img_right_text_tit{font-size: 20px; letter-spacing: -1px;}
-.list_wrap ul li a .img_right_text p:last-child{color: gray;}
-.list_wrap ul li a .img_right_text span{font-weight: bold;}
-.list_wrap ul li a .icons{float: right;}
-.list_wrap ul li a .icons img{width: 30px; height: 30px; background: white; border-radius: 50%;}
-.list_wrap ul li a .icons .heart img{}
-.list_wrap ul li a .icons .ring img{}
 
 
 
