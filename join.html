@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/joinstyle.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>회원가입</h1>
+        <fieldset>
+            <legend>회원가입</legend>
+            <form action="result.html" method="post" name="form1" id="joinForm">
+                <ul>
+                    <li>
+                        <label for="id1">아이디<span> &#42;</span></label>
+                        <input type="text" required id="id1"><span id="id1Msg"></span> (영문소문자/숫자, 4~16자) <a href="#"><span id="duplicate">중복 확인</span></a>
+                    </li>
+                    <li>
+                        <label for="pw1">비밀번호<span> &#42;</span></label>
+                        <input type="password" required id="pw1"><span id="pw1Msg"></span>(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)
+                    </li>
+                    <li>
+                        <label for="pw2">비밀번호 확인<span> &#42;</span></label>
+                        <input type="password" required id="pw2"><span id="pw2Msg">비밀번호가 일치하지 않습니다.</span>
+                    </li>
+                    <li>
+                        <label for="name1">이름<span> &#42;</span></label>
+                        <input type="text" required id="name1"><span id="name1Msg"></span>
+                    </li>
+                    <li>
+                        <label for="phone">휴대전화</label>
+                        <select name="phone" id="phone">
+                            <option value>010</option>
+                            <option value>011</option>
+                            <option value>016</option>
+                            <option value>017</option>
+                            <option value>018</option>
+                            <option value>019</option>
+                        </select> -
+                        <input type="text" class="phone" id="num">-
+                        <input type="text" class="phone" id="num1">
+                    </li>
+                    <li>
+                        <label for="email1">이메일<span> &#42;</span></label>
+                        <input type="email" required size="30" id="email1">
+                    </li>
+                    <li>
+                        <label for="tel1">전화번호</label>
+                        <input type="text" required size="30" id="tel1">
+                    </li>
+                </ul>
+            </form>
+        </fieldset>
+        
+        <div><input type="text" class="blank" value="회원가입" id="submit"></div>
+    </div>
+</body>
+</html>

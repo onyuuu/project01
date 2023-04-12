@@ -7,6 +7,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *{font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}
 .container{width: 1260px; height: inherit; margin: 0 auto;/*  background: rgba(0, 0, 0, .1); */}
@@ -87,32 +93,106 @@
 
 .inner{position: relative; padding: 0 20px; max-width: 1160px; height: 100%; margin: 0 auto;}
 .themeWrap{}
-.themeWrap .visualWrap{width: 100%; height: 1130px; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_bg01.png) top no-repeat; background-size: cover; padding: 80px 0;}
-.themeWrap .visualWrap .leftMenu{}
-.themeWrap .visualWrap .inner{}
-.themeWrap .visualWrap .inner .titWrap{}
+.themeWrap .visualWrap{width: 100%; height: 1130px; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_bg01.png) top no-repeat; background-size: cover; padding: 80px 0; position: relative;}
+
+.themeWrap .visualWrap .leftMenu{background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_bg_left.png) no-repeat top; position: absolute; width: 181px; height: 333px; padding: 100px 0 0 20px; bottom: 110px; left: 90px; background-size: contain; z-index: 999; box-shadow: 20px 20px 15px rgba(0,0,0,.6);}
+.themeWrap .visualWrap .leftMenu ul{}
+.themeWrap .visualWrap .leftMenu ul li{}
+.themeWrap .visualWrap .leftMenu ul li a{font-family: 'GmarketSansMedium'; color: #7a7773; font-size: 18px; line-height: 38px; position: relative; z-index: 1;}
+.themeWrap .visualWrap .leftMenu ul li.on a, .themeWrap .visualWrap .leftMenu ul li:hover a{font-weight: bold; color: #000;}
+.themeWrap .visualWrap .leftMenu ul li.on a::before, .themeWrap .visualWrap .leftMenu ul li:hover a::before
+{content: ''; border-bottom: 7px solid #dfd9d0; position: absolute; width: 100%; bottom: 0; left: 0; z-index: -1;}
+.themeWrap .visualWrap .leftMenu ul li.on a::after, .themeWrap .visualWrap .leftMenu ul li:hover a::after{content: ''; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_icon_left.png) no-repeat; position: absolute; bottom: 0; right: -30px; width: 23px; height: 29px;}
+
+
+
+.themeWrap .visualWrap .inner .titWrap{text-align: center;}
 .themeWrap .visualWrap .inner .titWrap p{}
-.themeWrap .visualWrap .inner .titWrap p::before{content: ''; border: 1px solid red; width: 1000px;}
+.themeWrap .visualWrap .inner .titWrap p::before{content: ''; width: 600px; position: absolute; top: 30px; right: 190px; background: #a8a79b; height: 60px; border-radius: 10px;}
 .themeWrap .visualWrap .inner .titWrap p strong{color: #fff; font-size: 48px; font-weight: bold; letter-spacing: -1px; background: #383633; border-radius: 10px; padding: 5px 20px 0px; transform: rotateZ(-3deg); display: inline-block; position: relative; font-family: 'GmarketSansMedium';}
 .themeWrap .visualWrap .inner .titWrap p strong::before{content:'';background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_icon_visual01.png) no-repeat center; position: absolute; width: 66px; height: 54px; top: -26px; right: -25px; background-size: contain;}
 .themeWrap .visualWrap .inner .titWrap p strong span{color: #ff95c7; font-family: 'GmarketSansMedium';}
-.themeWrap .visualWrap .inner .titWrap ul{}
-.themeWrap .visualWrap .inner .titWrap ul li{}
-.themeWrap .visualWrap .inner .titWrap ul li span{}
-.themeWrap .visualWrap .inner .contentsWrap{}
-.themeWrap .visualWrap .inner .contentsWrap .contentBox{}
-.themeWrap .visualWrap .inner .contentsWrap .contentBox{}
+
+.themeWrap .visualWrap .inner .titWrap ul{margin: 50px 0 60px; display: inline-block;}
+.themeWrap .visualWrap .inner .titWrap ul li{position: relative; font-size: 26px; text-align: left; z-index: 1;}
+.themeWrap .visualWrap .inner .titWrap ul li::before{content: ''; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_icon_checkbox.png) center no-repeat; position: absolute; top: 5px; left: -40px; width: 31px; height: 31px; background-size: contain;}
+.themeWrap .visualWrap .inner .titWrap ul li span{font-family: 'GmarketSansMedium'; font-weight: bold; font-style: italic; position: relative;}
+.themeWrap .visualWrap .inner .titWrap ul li span::after{content: ''; border-bottom: 7px solid #fff; position: absolute; width: 100%; bottom: 0; left: 0; z-index: -1;}
+
+.themeWrap .visualWrap .inner .contentsWrap{position: relative; margin: 0 auto; width: 1022px;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox{position: absolute; top: 0; left: 0; width: 100%; padding: 80px 85px 0;}
 .themeWrap .visualWrap .inner .contentsWrap .contentBox .con_titWrap{}
-.themeWrap .visualWrap .inner .contentsWrap .contentBox .con_titWrap p{}
-.themeWrap .visualWrap .inner .contentsWrap .contentBox .con_titWrap span{}
-.themeWrap .visualWrap .inner .contentsWrap .contentBox .con_titWrap span strong{}
-.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList{}
-.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li{}
-.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li.new{}
-.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li a{}
-.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li a .imgWrap{}
-.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li a .imgWrap img{}
-.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li a p{}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .con_titWrap>img{box-shadow: 40px 40px 0 rgb(0 0 0 / 20%); border-radius: 20px;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .con_titWrap p{font-style: italic; font-size: 32px; margin-bottom: 10px; letter-spacing: -1px;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .con_titWrap>span{font-family: 'GmarketSansMedium'; font-size: 70px; line-height: 90px; letter-spacing: -1px;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .con_titWrap span strong{color: #ff439c; font-weight: 700; font-family: 'GmarketSansMedium'; font-size: 78px;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList{margin-top: 20px;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li{float: left; background: #f0ede8; margin-right: 20px; width: 125px; height: 115px; border-radius: 10px; text-align: center;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li:last-child{margin-right: 0;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li:hover{border: 4px solid #ff439c;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li:hover a{padding: 25px 0;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li.new{position: relative;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li.new::before{content: 'NEW'; position: absolute; top: 0; left: 0; background: #ff439c; color: #fff; font-family: 'GmarketSansMedium'; font-weight: bold; font-size: 10px; padding: 5px 5px 2px 5px; border-top-left-radius: 10px; border-bottom-right-radius: 10px;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li:hover.new::before{left: -4px; top: -4px;}
+.themeWrap .visualWrap .inner .contentsWrap .contentBox .conList li a{font-size: 18px; display: block;  padding: 28px 0;}
+
+
+/* 자격증 과정 */
+.themeWrap .eduWrap{}
+.themeWrap .bg1{background: #f2f8ff;}
+.themeWrap .eduWrap .e_titWrap{text-align: center; margin-bottom: 40px;}
+.themeWrap .eduWrap .e_titWrap span{font-family: 'GmarketSansBold'; font-size: 40px; font-weight: bold; -webkit-text-stroke: 1px #fff; position: relative; z-index: 1; padding: 0 5px;}
+.themeWrap .eduWrap .e_titWrap span::before{content: ''; position: absolute; width: 100%; bottom: 3px; left: 0; background: #43b2ff; height: 15px; z-index: -1;}
+.themeWrap .eduWrap .courseWrap{width: 100%; border-bottom: 2px solid #cbcfd4; padding-bottom: 50px;}
+.themeWrap .eduWrap .courseWrap .course_img{float: left; margin-right: 40px;}
+.themeWrap .eduWrap .courseWrap .course_img img{}
+.themeWrap .eduWrap .courseWrap .course_text_box{padding: 20px 0 0; float: left;}
+.themeWrap .eduWrap .courseWrap .course_text_box .course_text{}
+.themeWrap .eduWrap .courseWrap .course_text_box .course_text p{font-size: 22px; letter-spacing: -1px;}
+.themeWrap .eduWrap .courseWrap .course_text_box .course_text span{font-family: 'GmarketSansBold'; font-style: italic; font-size: 34px;}
+.themeWrap .eduWrap .courseWrap .course_text_box .course_text_link{text-align: right; margin-top: 140px;}
+.themeWrap .eduWrap .courseWrap .course_text_box .course_text_link a{background: #43b2ff; color: #fff; font-family: 'GmarketSansBold'; padding: 12px 25px; font-size: 20px; border-radius: 30px;}
+
+.themeWrap .eduWrap .courseList{width: 100%; position: relative; padding: 50px 0;}
+.themeWrap .eduWrap .courseList.bgImg::before{content: ''; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_item01_img03.png) no-repeat; position: absolute; left: -350px; bottom: 0; width: 453px; height: 352px; background-size: contain;}
+
+/* 채용시장에서 가장 많이 요구하는 자격 분야 */
+.themeWrap .eduWrap .courseList .c_txtWrap{text-align: center; margin-bottom: 30px;}
+.themeWrap .eduWrap .courseList .c_txtWrap strong{font-family: 'GmarketSansBold'; font-size: 24px; color: #2f2d2a; border-bottom: 1px solid #2f2d2a;}
+
+.themeWrap .eduWrap .courseList .c_contentWrap{width: 100%; height: 600px;}
+.themeWrap .eduWrap .courseList .c_contentWrap .left_chart{float: left; width: 50%; text-align: center; margin: auto 0;}
+.themeWrap .eduWrap .courseList .c_contentWrap .left_chart img{display: inline-block;}
+.themeWrap .eduWrap .courseList .c_contentWrap .right_table{}
+.themeWrap .eduWrap .courseList .c_contentWrap .right_table table{font-size: 20px; background: #fff; border-collapse: collapse;}
+.themeWrap .eduWrap .courseList .c_contentWrap .right_table table thead{color: #fff; background: #0a5ca7;}
+.themeWrap .eduWrap .courseList .c_contentWrap .right_table table th,tr,td{padding: 10px 30px;}
+.themeWrap .eduWrap .courseList .c_contentWrap .right_table table th{border: 2px solid #f2f8ff;}
+.themeWrap .eduWrap .courseList .c_contentWrap .right_table table td{border-left: 2px solid #f2f8ff;}
+.themeWrap .eduWrap .courseList .c_contentWrap .right_table p{color: rgb(167, 167, 167); font-size: 14px; text-align: right; margin-right: 125px; margin-top: 10px;}
+
+
+/* 교육 미리보기 */
+.themeWrap .eduWrap .eduPrev{background: #0a467c; padding: 40px 0; width: 100%;}
+.themeWrap .eduWrap .eduPrev .edu_p_text_box{}
+.themeWrap .eduWrap .eduPrev .edu_p_text_box .edu_p_textWrap{text-align: center; margin-bottom: 30px;}
+.themeWrap .eduWrap .eduPrev .edu_p_text_box .edu_p_textWrap strong{font-family: 'GmarketSansBold'; font-size: 24px; color: #fff; border-bottom: 1px solid #fff;}
+
+.themeWrap .eduWrap .eduPrev .edu_p_content_box{width: 100%; text-align: center;}
+.themeWrap .eduWrap .eduPrev .edu_p_content_box .edu_p_content p{color: #fff; font-size: 19px; margin-top: 20px;}
+.themeWrap .eduWrap .eduPrev .edu_p_content_box .edu_p_content .edu_p_content_left{float: left; width: 50%;}
+.themeWrap .eduWrap .eduPrev .edu_p_content_box .edu_p_content .edu_p_content_right{float: right; width: 50%;}
+.themeWrap .eduWrap .eduPrev .edu_p_content_box .edu_more{width: 100%;}
+.themeWrap .eduWrap .eduPrev .edu_p_content_box .edu_more a{color: #fff; font-size: 20px; font-family: 'GmarketSansBold'; background: #ff4397; padding: 12px 30px; border-radius: 30px;}
+
+
+/* IT 교육 */
+.themeWrap .bg2{background: #f9fff4;}
+.themeWrap .bg3{}
+.themeWrap .bg4{}
+.themeWrap .bg5{}
+.themeWrap .bg6{}
+
 
 
 

@@ -78,20 +78,24 @@
 
 
 /* 본문영역 */
-.job_dicList_wrap{width: 100%; height: 2207px; background: rgb(240, 240, 240);}
-.job_dicList_top{height: 713px; background: url(../img/잡아바홈화면/참여소통/job_dic_top_bg.jpg) no-repeat 50% top/110%; padding: 170px 0 0; text-align: center;}
+.job_dicList_wrap{width: 100%; height: 2267px; background: rgb(240, 240, 240);}
+.job_dicList_top{height: 713px; background: url(../img/잡아바홈화면/참여소통/job_dic_top_bg.jpg) no-repeat 50% top/110%; padding: 170px 0 0; text-align: center;}
 .job_dic_search{color: gray; background: #fff; display: inline-block; padding: 15px 240px 15px 20px; margin: 50px 0 70px 0; border: 4px solid #f42175; border-radius: 50px;}
 .job_dic_quick{background: #fff; width: 530px; height: 170px; text-align: center; margin: 0 auto; border: 16px solid #18526e; padding: 10px; position: relative;}
-.job_dic_quick .gori1{background: url(../img/잡아바홈화면/참여소통/gori.png) no-repeat; width: 25px; height: 74px; display: inline-block; position: absolute; top: -40px; left: 50px;}
-.job_dic_quick .gori2{background: url(../img/잡아바홈화면/참여소통/gori.png) no-repeat; width: 25px; height: 74px; display: inline-block; position: absolute; top: -40px; right: 50px;}
-.job_dic_quick h2{font-weight: bold; font-size: 16px; padding: 10px; margin-bottom: 10px;}
+.job_dic_quick .gori1{background: url(../img/잡아바홈화면/참여소통/gori.png) no-repeat; width: 25px; height: 74px; display: inline-block; position: absolute; top: -40px; left: 50px;}
+.job_dic_quick .gori2{background: url(../img/잡아바홈화면/참여소통/gori.png) no-repeat; width: 25px; height: 74px; display: inline-block; position: absolute; top: -40px; right: 50px;}
+.job_dic_quick h2{font-weight: bold; font-size: 16px; padding: 10px 10px 20px; margin-bottom: 10px;}
 .job_dic_quick h2 span{color: #f42175;}
-.job_dic_quick a{font-size: 20px; width: 200px; height: 60px; color: rgb(59, 59, 59);}
-.job_dic_quick a.quick1 span{background: url(../img/잡아바홈화면/참여소통/ico_job_dic02.png) no-repeat; display: inline-block; width: 60px; height: 60px;}
-.job_dic_quick a.quick2 span{background: url(../img/잡아바홈화면/참여소통/ico_job_dic03.png) no-repeat; display: inline-block; width: 60px; height: 60px;}
+.job_dic_quick a{font-size: 20px; color: rgb(59, 59, 59); position: relative;}
+.job_dic_quick a.quick1{display: inline-block; transform: translateX(-10px);  text-align: right; margin-left: 60px; padding-left: 20px;}
+.job_dic_quick a.quick1::before{content: ''; position: absolute; width: 60px; height: 60px; background: url(../img/잡아바홈화면/참여소통/ico_job_dic02.png) no-repeat; left: -50px; top: 50%; transform: translateY(-50%);}
+.job_dic_quick a.quick2{display: inline-block; text-align: left; padding: 0 10px; margin-left: 80px; text-align: right;}
+.job_dic_quick a.quick2::before{content: ''; position: absolute; width: 60px; height: 60px; background: url(../img/잡아바홈화면/참여소통/ico_job_dic03.png) no-repeat; left: -60px; top: 50%; transform: translateY(-50%);}
 
 
-.video_edu h2{color: #18526e; font-size: 30px; font-weight: bold; text-align: center;}
+
+.video_edu{background: #fff;}
+.video_edu h2{color: #18526e; font-size: 30px; font-weight: bold; text-align: center; padding: 20px 0;}
 .video_edu h2 span{font-size: 18px; color: rgb(182, 182, 182); display: block; font-weight: lighter;}
 .edu_area{width: 1080px; height: 270px; margin: 0 auto;}
 .edu_area a{float: left; margin-right: 20px;}

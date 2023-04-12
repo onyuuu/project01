@@ -1,0 +1,267 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}
+.container{width: 1260px; height: inherit; margin: 0 auto;/*  background: rgba(0, 0, 0, .1); */}
+
+/* 레이아웃 */
+#wrap{width: 100%;}
+#header{width: 100%; height: 200px; background: #38bab2; background: linear-gradient(90deg, rgba(56,186,178,1) 0%, rgba(56,186,178,1) 76%, rgba(0,114,171,1) 80%, rgba(0,50,130,1) 100%);}
+#main{width: 100%; height: auto;}
+#footer{width: 100%; height: 400px;}
+
+
+/* 헤더영역 */
+
+/* top */
+.top{width: 100%; height: 37px; background: -webkit-linear-gradient(top,rgb(245, 245, 245),#ebebeb); line-height: 37px; float: left; position: relative;}
+.top .left{float: left;}
+.top .left ul li{float: left;}
+.top .left ul li::after{content: ""; width: 1px; height: 10px; background: rgb(207, 207, 207); display: inline-block;}
+.top .left ul li:last-child::after{display: none}
+.top .left ul li a{margin: 0 10px; color: rgb(165, 165, 165); font-size: 12px;}
+.top .left ul li:first-child a{margin-left: 0;}
+.top .right ul{float: right;}
+.top .right ul li{float: left;}
+.top .right ul li::after{content: ""; width: 1px; height: 10px; background: rgb(207, 207, 207); display: inline-block;}
+.top .right ul li:last-child::after{display: none}
+.top .right ul li a{margin: 0 10px; color: rgb(165, 165, 165); font-size: 12px;}
+.top .right ul li:last-child a{margin-right: 0;}
+
+/* title */
+.title{width: 100%; height: 94px; background: rgb(255, 255, 255); position: relative; top: 37px; border-top: 1px solid rgb(212, 212, 212);}
+.title h1>span{font-size: 16px; letter-spacing: -1.2px; margin-left: 13px; width: 220px; position: absolute; bottom: 10px; position: relative; bottom: 10px; left: 5px; font-weight: 530;}
+.title h1>span>span{color: rgb(75, 188, 171);}
+.title .logo{float: left;}
+.title .search{float: right;}
+.title .search a{padding: 10px 80px 10px 10px; border-radius: 7px; background: rgb(241, 241, 241) url(../img/잡아바홈화면/btn_searchbar.png) no-repeat 175px 11px; color: #cacaca;}
+
+/* 메뉴 */
+.nav{width: 100%; margin: 0 auto; height: 70px; background: #38bab2; position: relative; top: 37px; background: linear-gradient(90deg, rgba(56,186,178,1) 0%, rgba(56,186,178,1) 76%, rgba(0,114,171,1) 80%, rgba(0,50,130,1) 100%);}
+.nav .bg{display: none; background: #fff; position: absolute; top: 69px; left: 0; width: 100%; height: 295px; background: rgb(255, 255, 255); z-index: 2;  border-bottom: 1px solid rgb(218, 218, 218);}
+.nav:hover .bg{display: block;}
+
+.bg_blue{background: linear-gradient(90deg, #00a8cd 32%, #0072ab 100%); border-top-left-radius: 40px; border-bottom-left-radius: 40px; box-shadow: -5px 0px 8px rgba(63, 63, 63, 0.291);}
+.nav .bg .dep1:hover{z-index: 3;}
+.nav .dep1{text-align: center;}
+.nav .dep1>li:hover>a{color: rgb(255, 244, 86);}
+.nav .dep1>li>ul{position: absolute; z-index: 3;}
+.nav .dep1>li{float: left; width: 170px; height: 70px; cursor: pointer;}
+.nav .dep1>li>a{width: 100%; height: 100%; color: #fff; font-size: 15px; line-height: 70px;}
+.nav .dep1>li>ul{display: none; background: white; width: 100%; height: 243px;}
+.nav:hover .dep1>li>ul{display: block;}
+.nav .dep1>li>.dep2{width: 170px;}
+.nav .dep1>li>.bg_gray{background: rgb(249, 249, 249); width: 240px; height: 243px;}
+.nav .dep1>li>ul>li:first-child{margin-top: 35px;}
+.nav .dep1>li>ul>li{display: block; margin-top: 20px; line-height: 100%; font-size: 14px; letter-spacing: -.7px; width: 100%;}
+.nav .dep1>li>ul>li>a{width: 170px; display: block;}
+.nav .dep1:hover>li>ul>li{display: block;}
+.nav .dep1>li>.dep2>li:hover>a{color: rgb(74, 107, 197); font-weight: bold;}
+
+/* 메뉴 2뎁스 흰배경, 공지바 */
+.nav .bg .notice_bar{position: absolute; bottom: 0px; left: 0; background: #fff; width: 100%; height: 50px; display: none; border-top: 1px solid rgb(218, 218, 218);}
+.nav .dep1:hover, .nav .bg .notice_bar{display: block;}
+.nav .bg .notice_bar strong{line-height: 50px; font-weight: bold; font-size: 14px; letter-spacing: -.5px;}
+.nav .bg .notice_bar span{line-height: 50px; font-size: 14px; letter-spacing: -.7px;}
+.nav .bg .notice_bar .ico{background: url(../img/잡아바홈화면/ico_innergnb.png) no-repeat; width: 26px; height: 26px; display: inline-block; vertical-align: middle; margin-right: 5px;}
+
+.nav .bg .noticebar_left{float: left; width: 100px; font-weight: bold;}
+.nav .bg .noticebar_mid{float: left; width: 920px;}
+.nav .bg .noticebar_right{float: left; width: 240px; font-weight: bold;}
+.nav .bg .noticebar_right .icon2{background-position: -26px 0; margin-left: 10px;}
+.nav .bg .noticebar_right .icon3{background-position: -52px 0; margin-left: 15px;}
+
+.nav .bg .noticebar_right span{width: 122px; height: 100%;}
+.nav .bg .noticebar_right span>span{width: 100px; float: left;}
+
+
+
+/* 본문영역 */
+.inner{position: relative; padding: 0 20px; max-width: 1300px; height: 100%; margin: 0 auto;}
+
+#mainWrap{width: 100%; background: linear-gradient(#d2e8ff, #89f9fb); padding-bottom: 10px;}
+#mainWrap .visualWrap{width: 100%; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_visual_bg.png) no-repeat; padding: 60px 0;}
+#mainWrap .visualWrap .titleWrap{text-align: center;}
+#mainWrap .visualWrap .titleWrap strong{font-family: 'GmarketSansBold'; color: #fff; font-size: 28px; background: #fb774a; border: 4px solid #f9572f; border-radius: 40px; padding: 5px 20px;}
+#mainWrap .visualWrap .titleWrap img{display: block; margin: 30px auto;}
+#mainWrap .visualWrap .chartWrap{background: #fff; box-shadow: 13px 13px 0 rgba(0,0,0,.2); border-radius: 20px; padding: 40px 60px; margin-top: 390px; position: relative;}
+#mainWrap .visualWrap .chartWrap::before{content: ''; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_img01.png) no-repeat; width: 652px; height: 403px; position: absolute; top: -403px; left: 53%; transform: translateX(-50%); background-size: contain;}
+#mainWrap .visualWrap .chartWrap .chart_titWrap{text-align: center;}
+#mainWrap .visualWrap .chartWrap .chart_titWrap strong{font-family: 'GmarketSansBold'; font-size: 30px; position: relative; z-index: 1;}
+#mainWrap .visualWrap .chartWrap .chart_titWrap strong::after{content: ''; width: 101%; height: 18px; background: #fdee88; position: absolute; bottom: 0; left: 0; z-index: -1;}
+#mainWrap .visualWrap .chartWrap .chart_titWrap p{font-size: 24px; margin: 20px 0 40px 0;}
+#mainWrap .visualWrap .chartWrap .chart_titWrap p span{font-family: 'GmarketSansBold'; color: #fe6a63;}
+#mainWrap .visualWrap .chartWrap .chartBox{}
+#mainWrap .visualWrap .chartWrap .chartBox .chartLeft{float: left; width: 15%; padding: 80px 0;}
+#mainWrap .visualWrap .chartWrap .chartBox .chartLeft p{font-size: 20px; text-align: right; line-height: 50px; margin-right: 20px;}
+#mainWrap .visualWrap .chartWrap .chartBox .chartLeft p span{border-radius: 50%; width: 20px; height: 20px; display: inline-block; margin-left: 10px;}
+#mainWrap .visualWrap .chartWrap .chartBox .chartLeft p span.blue{background: #0ac6c9;}
+#mainWrap .visualWrap .chartWrap .chartBox .chartLeft p span.red{background: #fe6a63;}
+
+#mainWrap .contentsWrap{}
+#mainWrap .contentsWrap .infoList{}
+#mainWrap .contentsWrap .infoList li{display: flex; margin-bottom: 20px;}
+#mainWrap .contentsWrap .infoList li:nth-child(2){display: flex; align-items: center;}
+#mainWrap .contentsWrap .infoList li strong{font-family: 'GmarketSansBold'; color: #fff; background: #16a8d9; border-radius: 10px; font-size: 26px; width: 160px; height: 60px; text-align: center; line-height: 60px;}
+#mainWrap .contentsWrap .infoList li p{margin-left: 30px; font-size: 24px;}
+#mainWrap .contentsWrap .infoList li p span{color: #d62219; font-family: 'GmarketSansBold';}
+#mainWrap .contentsWrap .infoList li:nth-child(3) p span{color: #136e8f;}
+#mainWrap .contentsWrap .infoList li a{font-family: 'GmarketSansMedium'; font-size: 24px; background: #fff9d3; color: #ff6714; border: 4px solid #fdee88; border-radius: 40px; width: 130px; height: 50px; vertical-align: middle; display: inline-block; margin-left: 10px; text-align: center; padding: 4px 0;}
+
+#mainWrap .contentsWrap .eduList{position: relative; border: 3px solid #00688b; border-radius: 20px; background: #fff; margin: 50px 0; padding: 60px 30px; height: 320px;}
+#mainWrap .contentsWrap .eduList::before{content: ''; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_img02.png) no-repeat; position: absolute; top: -110px; right: 300px; width: 156px; height: 107px;}
+#mainWrap .contentsWrap .eduList::after{content: ''; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_img03.png) no-repeat; position: absolute; top: -360px; right: -10px; width: 340px; height: 379px;}
+#mainWrap .contentsWrap .eduList strong{position: absolute; background: #00688b; color: #fff; border-radius: 10px; width: 160px; height: 60px; text-align: center; line-height: 60px; font-size: 26px; font-family: 'GmarketSansBold'; top: -30px; left: -3px;}
+#mainWrap .contentsWrap .eduList ul{width: 100%;}
+#mainWrap .contentsWrap .eduList ul li{width: 50%; height: 70px; float: left; font-size: 24px; position: relative;}
+#mainWrap .contentsWrap .eduList ul li:nth-child(4)::after{content: '※출석율 80% 이상 달성 시 / 금액 증감 가능'; position: absolute; bottom: 5px; left: 80px; font-size: 18px; font-family: 'GmarketSansMedium'; color: rgb(145, 145, 145);}
+#mainWrap .contentsWrap .eduList ul li:nth-child(6)::after{content: '※교육이수율 70% 이상 달성 시'; position: absolute; bottom: 5px; left: 80px; font-size: 18px; font-family: 'GmarketSansMedium'; color: rgb(145, 145, 145);}
+#mainWrap .contentsWrap .eduList ul li span{font-family: 'GmarketSansBold'; background: #fdee88; border-radius: 50%; padding: 10px; margin-right: 20px;}
+
+#mainWrap .contentsWrap .eduTableWrap{}
+#mainWrap .contentsWrap .eduTableWrap table{border-collapse: collapse; text-align: center; width: 100%;}
+#mainWrap .contentsWrap .eduTableWrap table caption{position: absolute; width: 0; height: 0; left: -9999px; overflow: hidden;}
+#mainWrap .contentsWrap .eduTableWrap table th{background: #f4521b; color: #fff; font-size: 26px; font-weight: normal; border-bottom: 4px solid #d2e8ff; border-right: 4px solid #d2e8ff; padding: 12px 10px; line-height: 1;}
+#mainWrap .contentsWrap .eduTableWrap table td{background: #fff; border-bottom: 4px solid #d2e8ff; border-right: 4px solid #d2e8ff; font-size: 17px; padding: 14px;}
+#mainWrap .contentsWrap .eduTableWrap table .link{text-align: left; position: relative;}
+#mainWrap .contentsWrap .eduTableWrap table a{background: #00688b; color: #fff; font-family: 'GmarketSansMedium'; padding: 3px 5px; position: absolute; width: 95px; right: 10px; top: 50%; transform: translateY(-50%); font-size: 16px;}
+#mainWrap .contentsWrap .eduTableWrap table .tb_bg_color01{background: #ffc5b1;}
+#mainWrap .contentsWrap .eduTableWrap table .tb_bg_color02{background: #ffefe9;}
+#mainWrap .contentsWrap .eduTableWrap table .tb_bg_color03{background: #fffbe2;}
+#mainWrap .contentsWrap .eduTableWrap .eduTableWrap_textWrap{margin: 20px 0 80px;}
+#mainWrap .contentsWrap .eduTableWrap .eduTableWrap_textWrap p{font-size: 18px; color: rgb(82, 82, 82);}
+
+#mainWrap .eduCourse{position: relative;}
+#mainWrap .eduCourse::before{content: ''; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_img04.png) no-repeat; background-size: contain; width: 403px; height: 280px; position: absolute; bottom: 0; right: 0;}
+
+#mainWrap .eduCourse .left_menu_sticky{position: sticky; top: 0;}
+#mainWrap .eduCourse .left_menu{position: absolute; left: 0; top: 150px; width: 290px;}
+#mainWrap .eduCourse .left_menu .left_titWrap{background: #1693bb; padding: 20px; border-top-right-radius: 20px; position: relative;}
+#mainWrap .eduCourse .left_menu .left_titWrap::before{content: ''; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_img05.png) no-repeat; width: 253px; height: 161px; top: -143px; left: 30px; background-size: contain; position: absolute;}
+#mainWrap .eduCourse .left_menu .left_titWrap strong{font-family: 'GmarketSansBold'; color: #fff; font-size: 20px;}
+#mainWrap .eduCourse .left_menu .left_ListWrap{}
+#mainWrap .eduCourse .left_menu .left_ListWrap li{border: 2px solid #1e458c; padding: 10px; background: #fff; border-bottom: none;}
+#mainWrap .eduCourse .left_menu .left_ListWrap li:last-child{border-bottom: 2px solid #1e458c;}
+#mainWrap .eduCourse .left_menu .left_ListWrap li.on{background: #fdee88; color: #1e458c;}
+#mainWrap .eduCourse .left_menu .left_ListWrap li.on a{color: #1e458c;}
+#mainWrap .eduCourse .left_menu .left_ListWrap li a{font-family: 'GmarketSansMedium'; font-size: 15px; color: #6b84b1;}
+
+#mainWrap .eduCourse .inner{}
+#mainWrap .eduCourse .inner .eduCourse_titWrap{margin-bottom: 20px;}
+#mainWrap .eduCourse .inner .eduCourse_titWrap strong{font-family: 'GmarketSansBold'; font-size: 30px;}
+#mainWrap .eduCourse .inner .whiteBox{background: #fff; border: 4px solid #00688b; padding: 30px; position: relative; margin-bottom: 30px; border-top-right-radius: 20px; border-bottom-left-radius: 20px;}
+#mainWrap .eduCourse .inner .whiteBox.item01::before{content: ''; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_edu_img01.png) no-repeat; position: absolute; width: 200px; height: 176px; right: 25px; bottom: 0;}
+#mainWrap .eduCourse .inner .whiteBox.item02::before{content: ''; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_edu_img02.png) no-repeat; position: absolute; width: 292px; height: 221px; right: 25px; bottom: 10px;}
+#mainWrap .eduCourse .inner .whiteBox.item03::before{content: ''; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_edu_img03.png) no-repeat; position: absolute; width: 310px; height: 220px; right: 30px; bottom: 0;}
+#mainWrap .eduCourse .inner .whiteBox.item04::before{content: ''; background: url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_edu_img04.png) no-repeat; position: absolute; width: 211px; height: 169px; right: 50px; bottom: 30px;}
+#mainWrap .eduCourse .inner .whiteBox strong{font-family: 'GmarketSansBold'; color: #00688b; font-size: 22px;}
+#mainWrap .eduCourse .inner .whiteBox p{font-size: 17px; margin: 20px 0;}
+#mainWrap .eduCourse .inner .whiteBox table{width: 100%; border-spacing: 3px; border-collapse: separate;}
+#mainWrap .eduCourse .inner .whiteBox table caption{position: absolute; left: -9999px; width: 0; height: 0; overflow: hidden;}
+#mainWrap .eduCourse .inner .whiteBox table th{background: #0e9cd8; color: #fff; font-size: 18px; padding: 12px 0; font-weight: normal;}
+#mainWrap .eduCourse .inner .whiteBox table td{background: #f3f3f3; padding: 0 12px; font-size: 16px; padding: 12px 18px;}
+#mainWrap .eduCourse .inner .whiteBox .btnWrap{text-align: center; margin-top: 30px;}
+#mainWrap .eduCourse .inner .whiteBox .btnWrap a{font-family: 'GmarketSansBold'; color: #fdee88; background: #00688b; border: 3px solid #07465b; display: inline-block; width: 220px; padding: 5px 0; font-size: 24px; border-radius: 40px;}
+#mainWrap .eduCourse .inner .bg01 table td{background: #fff;}
+#mainWrap .eduCourse .inner .bg02 table td{background: #fff;}
+#mainWrap .eduCourse .inner .bg03 table td{background: #fff;}
+#mainWrap .eduCourse .inner .bg04 table td{background: #fff;}
+#mainWrap .eduCourse .inner .bg01{background:#fff url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_edu_bg01.png) no-repeat center; background-size: cover;}
+#mainWrap .eduCourse .inner .bg02{background:#fff url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_edu_bg02.png) no-repeat center; background-size: cover;}
+#mainWrap .eduCourse .inner .bg03{background:#fff url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_edu_bg03.png) no-repeat center; background-size: cover;}
+#mainWrap .eduCourse .inner .bg04{background:#fff url(../img/잡아바홈화면/지원정책/정책활용꿀팁/thema_edu_bg04.png) no-repeat center; background-size: cover;}
+
+
+/* 슬라이드배너 */
+#mainWrap .slideWrap{}
+#mainWrap .slideWrap .slide_body{width: 1000px; margin: 0 auto;}
+#mainWrap .slideWrap .slide_body h2{}
+#mainWrap .slideWrap .slide_body .slide_list{}
+#mainWrap .slideWrap .slide_body .slide_list button{}
+#mainWrap .slideWrap .slide_body .slide_list button.prevBtn{}
+#mainWrap .slideWrap .slide_body .slide_list button.nextBtn{}
+#mainWrap .slideWrap .slide_body .slide_list .frame{width: 1000px; overflow: hidden;}
+#mainWrap .slideWrap .slide_body .slide_list .frame ul{}
+#mainWrap .slideWrap .slide_body .slide_list .frame ul li{float: left; width: 240px;}
+#mainWrap .slideWrap .slide_body .slide_list .frame ul li a{display: block;}
+#mainWrap .slideWrap .slide_body .slide_list .frame ul li a img{width: 238px; height: 172px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 하단영역 */
+#footer{width: 100%; height: 398px;}
+.fnb_wrap{width: 100%; height: 60px; border-top: 1px solid rgb(226, 226, 226); border-bottom: 1px solid rgb(226, 226, 226);}
+.fnb{float: left;}
+.fnb ul{}
+.fnb ul li{float: left; margin-right: 20px; line-height: 58px;}
+.fnb ul li:after{content: "|"; color: rgb(226, 226, 226); display: inline-block;}
+.fnb ul li:last-child:after{width: 0;}
+.fnb ul li a{margin-right: 20px; font-size: 1.1em;}
+.fnb ul li a span{color: rgb(255, 70, 24); font-weight: bold;}
+.family_site{float: right; line-height: 60px; position: relative;}
+.family_site select{padding: 10px 20px; border-radius: 5px; border: none; appearance: none; background: rgb(245, 245, 245); font-weight: bold;}
+.family_site select option{float: left;}
+.family_site_arr{background: url(../img/잡아바홈화면/f_select_sign.png) no-repeat; width: 13px; height: 8px; position: absolute; right: 10px; top: 25px;}
+
+.f_num_area{width: 100%; height: 187px;}
+.num_logo{width: 180px; height: 170px; background: url(../img/잡아바홈화면/f_logo.png) no-repeat left  20px top 40px; float: left;}
+.f_info_area{float: left; width: 220px; height: 100%; padding-top: 46px;}
+.f_info_area p:first-child{font-size: 1.3em; font-weight: bold; margin: 5px 0 20px 0; color: #0c0c0c;}
+.f_info_area p{font-size: .9em; color: rgb(112, 112, 112); margin-bottom: 5px;}
+.f_number{float: left;}
+.f_number .num_left{width: 320px; height: 54px; padding-top: 46px; float: left;}
+.f_number .num_left span{display: block; float: left; font-size: .95em; color: #0c0c0c; line-height: 200%; font-size: 12px;}
+.f_number .num_left span.num_left_tit{width: 150px;}
+.f_number .num_left span.bold_num{width: 170px; font-weight: bold; color: #353535;}
+.f_number .num_right{width: 320px; height: 54px; padding-top: 46px; float: left;}
+.f_number .num_right span{display: block; float: left; font-size: .95em; color: rgb(112, 112, 112); line-height: 200%; font-size: 12px;}
+.f_number .num_right span.num_left_tit{width: 150px;}
+.f_number .num_right span.bold_num{width: 170px; font-weight: bold; color: #353535;}
+
+.f_sns{float: right; width: 200px; height: 131px;}
+.f_sns>a{width: 100%; height: 76px; background: url(../img/잡아바홈화면/gyeonggi_slogan.png) no-repeat top center; display: block; margin-top: 30px;}
+.f_sns .sns_list{width: 100%; height: 55px;}
+.f_sns .sns_list a{}
+.f_sns .sns_list a span{width: 40px; height: 40px; display: block; float: left;}
+.f_sns .sns_list a span.facebook{background: url(../img/잡아바홈화면/f_face_ico.png) no-repeat center;}
+.f_sns .sns_list a span.insta{background: url(../img/잡아바홈화면/f_insta_ico.png) no-repeat center;}
+.f_sns .sns_list a span.youtube{background: url(../img/잡아바홈화면/f_youtube_ico.png) no-repeat center;}
+.f_sns .sns_list a span.appstore{background: url(../img/잡아바홈화면/appstore.png) no-repeat center;}
+.f_sns .sns_list a span.playstore{background: url(../img/잡아바홈화면/playstore.png) no-repeat center;}

@@ -15,7 +15,23 @@
 
 	<link rel='stylesheet' href='css/reset.css'>
 	<link rel='stylesheet' href='css/style5.css'>
+	
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./js/script.js"></script>
 </head>
@@ -42,7 +58,7 @@
 				<div class="right">
 					<ul class="cf">
 						<li><a href="#" title="로그인">로그인</a></li>
-						<li><a href="#" title="회원가입">회원가입</a></li>
+						<li><a href="./join.html" title="회원가입">회원가입</a></li>
 						<li><a href="#" title="고객센터">고객센터</a></li>
 						<li><a href="#" title="상담사 전용">상담사 전용</a></li>
 					</ul>
@@ -87,7 +103,7 @@
 			</div>
 			<div class="container">
 				<ul class="dep1 cf">
-					<li><a href="./index1.html" title="지원정책">지원정책</a>
+					<li><a href="./index1-1.html" title="지원정책">지원정책</a>
 						<ul class="dep2">
 							<li><a href="#" title="일자리 지원사업">일자리 지원사업</a></li>
 							<li><a href="#" title="나를 위한 맞춤정책">나를 위한 맞춤정책</a></li>
@@ -156,87 +172,407 @@
     <main id="main">
         <div id="page-content">
             <div class="header_wrap">
-                <div class="header">
-                    <div class="container">
-                        <h2>기업채용정보</h2>
-                        <p>당신이 도전할 수 있는 기회, 40만개! 잡아바는 귀하의 성공적인 취업을 응원합니다.</p>
-                        <div class="hot_hinfo">
-							<h3><span>HOT</span> 채용정보</h3>
-							<div class="hot_list">
-								<a href="#">
-									<p class="comName">(주)이파피루스</p>
-									<p class="comHire">(주)이파피루스 신입/경력 채용</p>
-									<p class="comCon">회사내규에 따름 / 정규직 / 학력무관</p>
-									<p class="comDate">D-29 (~12월 31일)</p>
-								</a>
-								<a href="#">
-									<p class="comName">유일테크(주)</p>
-									<p class="comHire">배우면서 일하실 용접사 모집합니다.</p>
-									<p class="comCon">3000 ~ 4000 만원 / 정규직,계약직 / ...</p>
-									<p class="comDate">D-29 (~12월 31일)</p>
-								</a>
-								<a href="#">
-									<p class="comName">(주)금오하이텍</p>
-									<p class="comHire">생산직 근로자 채용</p>
-									<p class="comCon">회사내규에 따름 / 정규직 / 학력무관</p>
-									<p class="comDate">D-29 (~12월 31일)</p>
-								</a>
+				<div class="container">
+					<div class="header">
+						<h2>일경험 채용관</h2>
+						<p>기간제 일자리, 청년인턴, 해외취업 정보를 일경험 채용관에서 확인해보세요.</p>
+					</div>
+				</div>
+            </div>
+			<div class="main_wrap">
+				<div class="container">
+					<div class="tabs cf">
+						<a href="#">기간제 채용관</a>
+						<a href="#" class="active">청년인턴 채용관 (170)</a>
+						<a href="#">해외취업 채용관</a>
+					</div>
+					<div class="tab2_wrap">
+						<h4 class="tit">
+							도내 청년인턴 정보를 확인하고 직장생활 체험을 통한 직무능력을 향상해보세요
+						</h4>
+						<div class="searchBox">
+							<input type="text" placeholder="채용공고명 또는 기관명을 입력해주세요.">
+							<button class="reset">초기화</button>
+							<button class="searchButton">검색</button>
+						</div>
+						<div class="list">
+							<div class="allClose">
+								<a href="#">전체 닫기</a>
 							</div>
-							<div class="deSearch">
-								
-							</div>
-							<div class="hireList">
-								<div>
-									<h3>채용공고 <span>5,676</span>건</h3>
-								</div>
-								<div>
-									<form action="">
-										<input type="checkbox">
-									</form>
-								</div>
-								<div class="rclist">
-									<div class="div">
-										<div class="comtit"></div>
-										<div class="rctit">
-											<span></span>
+							<div class="list_wrap">
+								<ul>
+									<li>
+										<div class="list_title_wrap">
+											<div class="topWrap cf">
+												<div class="topCom">Naver I&S㈜</div>
+												<div class="toggle"><img src="./img/잡아바홈화면/채용정보/arrow1.png" alt="arrow"></div>
+											</div>
+											<div class="comTitWrap">
+												<div class="comTit">[NAVER I&S] 네이버계열 회계/결산 담당</div>
+												<div class="posWrap cf">
+													<div class="pos">
+														<span>포털 &middot; 컨텐츠 &middot; 커뮤니티, 경리 &middot; 회계 &middot; 결산, 재무 &middot; 세무 &middot; IR</span>
+														<span>학력무관</span>
+														<span>정규직</span>
+													</div>
+													<div class="date">
+														<span>오늘마감</span>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+										<div class="details">
+											<div class="details_text">
+												<p>상세내용</p>
+												<p>30대그룹, 대기업</p>
+												<p>결산, 회계, 재무</p>
+												<p>홈페이지 지원 | 모집인원 : ○</p>
+											</div>
+										</div>
+										<div class="apply">
+											<a href="#">지원하기</a>
+										</div>
+									</li>
+									<li>
+										<div class="list_title_wrap">
+											<div class="topWrap cf">
+												<div class="topCom">덕일산업㈜</div>
+												<div class="toggle"><img src="./img/잡아바홈화면/채용정보/arrow1.png" alt="arrow"></div>
+											</div>
+											<div class="comTitWrap">
+												<div class="comTit">2023년 상반기 각 부문 신입/경력 채용</div>
+												<div class="posWrap cf">
+													<div class="pos">
+														<span>자동차 &middot; 조선 &middot; 철강 &middot; 항공, 사무 &middot; 총무 &middot; 법무, 소프트웨어 &middot; 하드웨어, 해외영업 &middot; 무역영업</span>
+														<span>학력무관</span>
+														<span>정규직</span>
+													</div>
+													<div class="date">
+														<span>오늘마감</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details">
+											<div class="details_text">
+												<p>상세내용</p>
+												<p>중견기업</p>
+												<p>HW설계, SW설계, 사무행정, 총무, 바이어관리, 바이어상담, 영어, 해외영업, 자재구매, SCM, 국내영업, 기술영업, 납품영업, 법인영업</p>
+												<p>잡코리아 온라인 접수 | 모집인원 : ○○</p>
+											</div>
+										</div>
+										<div class="apply">
+											<a href="#">지원하기</a>
+										</div>
+									</li>
+									<li>
+										<div class="list_title_wrap">
+											<div class="topWrap cf">
+												<div class="topCom">환인제약㈜</div>
+												<div class="toggle"><img src="./img/잡아바홈화면/채용정보/arrow1.png" alt="arrow"></div>
+											</div>
+											<div class="comTitWrap">
+												<div class="comTit">환인제약(주) 2023년 전문연구요원 채용</div>
+												<div class="posWrap cf">
+													<div class="pos">
+														<span>제약 &middot; 보건 &middot; 바이오, 화학 &middot; 에너지 &middot; 환경</span>
+														<span>석사</span>
+														<span>정규직</span>
+													</div>
+													<div class="date">
+														<span>오늘마감</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details">
+											<div class="details_text">
+												<p>상세내용</p>
+												<p>중견기업, 주권상장</p>
+												<p>건강, 바이오, 영양, 의약, 제약, 생산기술, 실험, 연구관리, 연구원, 제품개발, 화학, 연구 &middot; 실험 &middot; 기술, 의료 &middot; 제약, 제조 &middot; 공정</p>
+												<p>홈페이지 지원 | 모집인원 : ○</p>
+											</div>
+										</div>
+										<div class="apply">
+											<a href="#">지원하기</a>
+										</div>
+									</li>
+									<li>
+										<div class="list_title_wrap">
+											<div class="topWrap cf">
+												<div class="topCom">스투트가르트스포츠카㈜</div>
+												<div class="toggle"><img src="./img/잡아바홈화면/채용정보/arrow1.png" alt="arrow"></div>
+											</div>
+											<div class="comTitWrap">
+												<div class="comTit">[포르쉐공식딜러 SSCL] 각 부문별 채용</div>
+												<div class="posWrap cf">
+													<div class="pos">
+														<span>정비 &middot; A/S &middot; 카센터, 경리 &middot; 회계 &middot; 결산, 비서 &middot; 안내, 마케팅 &middot; 광고 &middot; 분석, 전시 &middot; 컨벤션</span>
+														<span>고졸</span>
+														<span>정규직, 계약직</span>
+													</div>
+													<div class="date">
+														<span>오늘마감</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details">
+											<div class="details_text">
+												<p>상세내용</p>
+												<p>외국계</p>
+												<p>검사소, 경정비, 세차, 자동차정비, 중정비, A&middot;S센터, 관리, 복리후생관리, 비품관리, 시설관리, 임금관리, 자산관리, 총무, 급여관리, 인사</p>
+												<p>잡코리아 온라인 접수 | 모집인원 : ○</p>
+											</div>
+										</div>
+										<div class="apply">
+											<a href="#">지원하기</a>
+										</div>
+									</li>
+									<li>
+										<div class="list_title_wrap">
+											<div class="topWrap cf">
+												<div class="topCom">케이에프씨코리아</div>
+												<div class="toggle"><img src="./img/잡아바홈화면/채용정보/arrow1.png" alt="arrow"></div>
+											</div>
+											<div class="comTitWrap">
+												<div class="comTit">KFC 정규직 신입 매니저 모집 [전국]</div>
+												<div class="posWrap cf">
+													<div class="pos">
+														<span>음식료 &middot; 외식 &middot; 프랜차이즈, 판매 &middot; 캐셔 &middot; 매장관리, 요리 &middot; 영양 &middot; 제과제빵 &middot; 바리스타</span>
+														<span>학력무관</span>
+														<span>정규직</span>
+													</div>
+													<div class="date">
+														<span>오늘마감</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details">
+											<div class="details_text">
+												<p>상세내용</p>
+												<p>외국계</p>
+												<p>매장운영, 메뉴개발, 메뉴기획, 식품, 음식료, 프랜차이즈, 매장관리, 매장시설관리, 매출관리, 식품판매, 재고관리, 진열관리, 판매관리, 프런트</p>
+												<p>잡코리아 온라인 접수 | 모집인원 : ○○</p>
+											</div>
+										</div>
+										<div class="apply">
+											<a href="#">지원하기</a>
+										</div>
+									</li>
+									<li>
+										<div class="list_title_wrap">
+											<div class="topWrap cf">
+												<div class="topCom">㈜ 시아스</div>
+												<div class="toggle"><img src="./img/잡아바홈화면/채용정보/arrow1.png" alt="arrow"></div>
+											</div>
+											<div class="comTitWrap">
+												<div class="comTit">각 분야별 [신입 및 경력] 사원 모집 - (생산관리/생산/공무/SCM-물류, 사무/관리팀/품질관리)</div>
+												<div class="posWrap cf">
+													<div class="pos">
+														<span>식품가공, 건축 &middot; 설비 &middot; 환경, 해외영업 &middot; 무역영업, 구매 &middot; 자재, 상품기획 &middot; MD, 유통 &middot; 물류</span>
+														<span>고졸</span>
+														<span>정규직</span>
+													</div>
+													<div class="date">
+														<span>오늘마감</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details">
+											<div class="details_text">
+												<p>상세내용</p>
+												<p>외국계</p>
+												<p>건물관리, 공조기, 구매전략, 냉동기, 보일러 기능사, 산업기사, 생산계획관리, 설비공무, 설비 오퍼레이터, 수배전, 식품유통, 시퀸스, 식품회사</p>
+												<p>잡코리아 온라인 접수 | 모집인원 : ○○</p>
+											</div>
+										</div>
+										<div class="apply">
+											<a href="#">지원하기</a>
+										</div>
+									</li>
+									<li>
+										<div class="list_title_wrap">
+											<div class="topWrap cf">
+												<div class="topCom">㈜KOMOS</div>
+												<div class="toggle"><img src="./img/잡아바홈화면/채용정보/arrow1.png" alt="arrow"></div>
+											</div>
+											<div class="comTitWrap">
+												<div class="comTit">재무기획 및 해외지원 부문 경력직 모집</div>
+												<div class="posWrap cf">
+													<div class="pos">
+														<span>자동차 &middot; 조선 &middot; 철강 &middot; 항공, 기획 &middot; 전략 &middot; 경영, 재무 &middot; 세무 &middot; IR, 수출입 &middot; 무역사무, 회계 &middot; 세무</span>
+														<span>대졸(2~3년)</span>
+														<span>정규직</span>
+													</div>
+													<div class="date">
+														<span>오늘마감</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details">
+											<div class="details_text">
+												<p>상세내용</p>
+												<p>외국계</p>
+												<p>인도, 체코, 경영기획, 기획조사, 사업기획, 서비스기획, 전산회계, 관리회계, 원가회계, 회계감사, ERP운용, 세무, 재무, 재무기획, 재무회계</p>
+												<p>잡코리아 온라인 접수 | 모집인원 : ○○</p>
+											</div>
+										</div>
+										<div class="apply">
+											<a href="#">지원하기</a>
+										</div>
+									</li>
+									<li>
+										<div class="list_title_wrap">
+											<div class="topWrap cf">
+												<div class="topCom">㈜골든듀</div>
+												<div class="toggle"><img src="./img/잡아바홈화면/채용정보/arrow1.png" alt="arrow"></div>
+											</div>
+											<div class="comTitWrap">
+												<div class="comTit">2023년 상반기 각부문 인턴 및 경력채용</div>
+												<div class="posWrap cf">
+													<div class="pos">
+														<span>백화점 &middot; 유통 &middot; 도소매, 생산관리 &middot; 공정관리 &middot; 품질관리, 제품 &middot; 서비스영업, 영업관리 &middot; 지원 &middot; 영업기획</span>
+														<span>학력무관</span>
+														<span>정규직, 계약직, 인턴직</span>
+													</div>
+													<div class="date">
+														<span>오늘마감</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details">
+											<div class="details_text">
+												<p>상세내용</p>
+												<p>외국계</p>
+												<p>면세점, 백화점, 숍마스터, 판매, 국내영업, 일반영업, 가맹점관리, 대리점관리, 영업관리, 영업지원, 생산, 생산관리, 자재관리, 품질, 품질검사</p>
+												<p>잡코리아 온라인 접수 | 모집인원 : ○</p>
+											</div>
+										</div>
+										<div class="apply">
+											<a href="#">지원하기</a>
+										</div>
+									</li>
+									<li>
+										<div class="list_title_wrap">
+											<div class="topWrap cf">
+												<div class="topCom">피에스케이그룹</div>
+												<div class="toggle"><img src="./img/잡아바홈화면/채용정보/arrow1.png" alt="arrow"></div>
+											</div>
+											<div class="comTitWrap">
+												<div class="comTit">2023년 PSK그룹 수시모집</div>
+												<div class="posWrap cf">
+													<div class="pos">
+														<span>전기 &middot; 전자 &middot; 제어, 재무 &middot; 세무 &middot; IR, 응용프로그래머, 네트워크 &middot; 서버 &middot; 보안, ERP &middot; 시스템분석</span>
+														<span>대졸(4년)</span>
+														<span>정규직</span>
+													</div>
+													<div class="date">
+														<span>D-1 (~01월18일)</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details">
+											<div class="details_text">
+												<p>상세내용</p>
+												<p>코스닥, 우수기업 (공신력 있는 기관에서 인증된 일하기 좋은기업)</p>
+												<p>기구설계, 전기, 전기기술, 전기설계, 전기설비, 세무, 자금, 재무, 재무회계, 해외마케팅, 해외영업, 구매관리, 자재관리, 자재구매, 자재구매기획</p>
+												<p>홈페이지 지원 | 모집인원 : ○</p>
+											</div>
+										</div>
+										<div class="apply">
+											<a href="#">지원하기</a>
+										</div>
+									</li>
+									<li>
+										<div class="list_title_wrap">
+											<div class="topWrap cf">
+												<div class="topCom">하이트진로㈜</div>
+												<div class="toggle"><img src="./img/잡아바홈화면/채용정보/arrow1.png" alt="arrow"></div>
+											</div>
+											<div class="comTitWrap">
+												<div class="comTit">하이트진로 채용연계형 생산직 인턴 채용</div>
+												<div class="posWrap cf">
+													<div class="pos">
+														<span>식품가공, 생산관리 &middot; 공정관리 &middot; 품질관리, 생산 &middot; 제조 &middot; 설비 &middot; 조립, 화물 &middot; 중장비</span>
+														<span>학력무관</span>
+														<span>인턴직</span>
+													</div>
+													<div class="date">
+														<span>D-1 (~01월18일)</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details">
+											<div class="details_text">
+												<p>상세내용</p>
+												<p>매출1000대기업, 대기업, 주권상장</p>
+												<p>식품가공, 지게차운전, 공정, 생산, 생산관리, 환경관리, 기계, 생산직, 설비, 제조</p>
+												<p>홈페이지 지원 | 모집인원 : ○○ | 사원급</p>
+											</div>
+										</div>
+										<div class="apply">
+											<a href="#">지원하기</a>
+										</div>
+									</li>
+								</ul>
+								<div class="page_number">
+									<a href="#" class="page_active">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#">6</a>
+									<a href="#">7</a>
+									<a href="#">8</a>
+									<a href="#">9</a>
 								</div>
 							</div>
 						</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-		<div class="recomm">
-			<div class="recomm_wrap">
-				<div class="container">
-					<h3>기업지원 정책</h3>
-					<div class="recomm_list_wrap cf">
-						<a href="#">
-							<img src="./img/잡아바홈화면/기업지원/support_policy_1.jpg" alt="">
-							<h4>기업채용정보</h4>
-							<span>2022-11-28 ~ 2022-12-16</span>
-						</a>
-						<a href="#">
-							<img src="./img/잡아바홈화면/기업지원/support_policy_2.jpg" alt="">
-							<h4>기업채용정보</h4>
-							<span>2022-11-28 ~ 2022-12-16</span>
-						</a>
-						<a href="#">
-							<img src="./img/잡아바홈화면/기업지원/support_policy_3.jpg" alt="">
-							<h4>기업채용정보</h4>
-							<span>2022-11-28 ~ 2022-12-16</span>
-						</a>
-						<a href="#">
-							<img src="./img/잡아바홈화면/기업지원/support_policy_4.jpg" alt="">
-							<h4>기업채용정보</h4>
-							<span>2022-11-28 ~ 2022-12-16</span>
-						</a>
+					</div>
+				</div>
+				<div class="conWrap cf">
+					<div class="container">
+						<ul>
+							<li>
+								<a href="#">
+									<div class="conTit">자기소개서 첨삭</div>
+									<div class="conDes">항상 고민되는 자기소개서<br>전문가에게 컨설팅 받아보세요.</div>
+									<div class="conGo">바로가기 &#8594;</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="conTit">진로, 취업상담</div>
+									<div class="conDes">심리, 진로, 취업 관련 상담이<br>필요할 때 전문 상담사와 1:1<br>상담해보세요.</div>
+									<div class="conGo">바로가기 &#8594;</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="conTit">취업진로 진단검사</div>
+									<div class="conDes">나에게 적합한 진로, 직업 직무가<br>고민될 때, 나 자신을 알아보세요.</div>
+									<div class="conGo">바로가기 &#8594;</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="conTit">취업멘토링</div>
+									<div class="conDes">직무의 생생한 이야기가<br>궁금하다면? 원하는 멘토에게 직접<br>질문해보세요.</div>
+									<div class="conGo">바로가기 &#8594;</div>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
+        </div>
     </main>
 	<footer id="footer">
 		<div class="container">

@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url('reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 
 *{font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}
 .container{width: 1260px; height: inherit; margin: 0 auto;/*  background: rgba(0, 0, 0, .1); */}
@@ -33,7 +33,7 @@
 
 /* title */
 .title{width: 100%; height: 94px; background: rgb(255, 255, 255); position: relative; top: 37px; border-top: 1px solid rgb(212, 212, 212);}
-.title h1>span{font-size: 16px; letter-spacing: -1.2px; margin-left: 13px; width: 220px; position: absolute; bottom: 10px; position: relative; bottom: 10px; left: 5px; font-weight: 530;}
+.title h1>span{font-size: 16px; letter-spacing: -1.2px; margin-left: 13px; width: 220px; position: absolute; bottom: 10px; position: relative; bottom: 10px; left: 5px;}
 .title h1>span>span{color: rgb(75, 188, 171);}
 .title .logo{float: left;}
 .title .search{float: right;}
@@ -89,29 +89,85 @@
 
 
 
+.videoEdu_wrap{}
+.videoEdu_wrap .vEdu_header{background: #e8eeff; position: relative; width: 100%; height: 354px;}
+.videoEdu_wrap .vEdu_header .container{background: url(../img/잡아바홈화면/직업훈련/visual_img.png) no-repeat right top 50px;}
+.videoEdu_wrap .vEdu_header .vEdu_header_titBox{}
+.videoEdu_wrap .vEdu_header .vEdu_header_titBox h2{color: #0e1f57; font-weight: 700; font-size: 34px; padding-top: 80px;}
+.videoEdu_wrap .vEdu_header .vEdu_header_titBox p{margin: 16px 0; font-size: 16px;}
+.videoEdu_wrap .vEdu_header .icons{position: absolute; top: 250px; left: 50%; transform: translateX(-50%); width: 1260px;}
+.videoEdu_wrap .vEdu_header .icons ul{}
+.videoEdu_wrap .vEdu_header .icons ul li{background: #fff; box-shadow: 0 0 5px #ddd; border-radius: 20px; padding: 130px 20px 20px; float: left; width: 400px; height: 253px; text-align: center;}
+.videoEdu_wrap .vEdu_header .icons ul li:not(:last-child){margin-right: 30px;}
+.videoEdu_wrap .vEdu_header .icons ul li strong{font-size: 23px; font-weight: 400; position: relative;}
+.videoEdu_wrap .vEdu_header .icons ul li strong::before{content: ''; position: absolute; width: 51px; height: 60px; top: -80px; left: 50%; transform: translateX(-50%); background: url(../img/잡아바홈화면/직업훈련/ico01.png) no-repeat;}
+.videoEdu_wrap .vEdu_header .icons ul li:nth-child(2) strong::before{content: ''; position: absolute; width: 54px; height: 52px; top: -72px; left: 50%; transform: translateX(-50%); background: url(../img/잡아바홈화면/직업훈련/ico02.png) no-repeat;}
+.videoEdu_wrap .vEdu_header .icons ul li:nth-child(3) strong::before{content: ''; position: absolute; width: 53px; height: 61px; top: -81px; left: 50%; transform: translateX(-50%); background: url(../img/잡아바홈화면/직업훈련/ico03.png) no-repeat;}
+.videoEdu_wrap .vEdu_header .icons ul li p{margin-top: 20px; font-size: 16px; color: #666;}
 
+.videoEdu_wrap .search_box{background: #f6f7f9; border: 1px solid #e6e6e6; border-radius: 20px; padding: 20px; margin-top: 200px;}
+.videoEdu_wrap .search_box .sesearch_box_text{}
+.videoEdu_wrap .search_box .sesearch_box_text p{font-size: 16px; float: left; margin-right: 250px;}
+.videoEdu_wrap .search_box .search_box_category{}
+.videoEdu_wrap .search_box .search_box_category select{outline: none; border: 1px solid #ddd; padding: 5px;}
+.videoEdu_wrap .search_box .search_box_category select#category{width: 300px; margin-right: 8px;}
+.videoEdu_wrap .search_box .search_box_category select#education{width: 300px;}
+.videoEdu_wrap .search_box .search_box_search{}
+.videoEdu_wrap .search_box .search_box_search .search_text{float: left;}
+.videoEdu_wrap .search_box .search_box_search .search_text input{outline: none; border: 1px solid #ddd; padding: 8px; margin-top: 10px; width: 1120px;}
+.videoEdu_wrap .search_box .search_box_search .search_btn{float: right;}
+.videoEdu_wrap .search_box .search_box_search .search_btn button{background: #ff6163; color: #fff; width: 88px; border-radius: 5px; height: 37px; transform: translateY(10px); font-size: 14px;}
+.videoEdu_wrap .hashtags{margin: 30px 0 80px;}
+.videoEdu_wrap .hashtags a{float: left; background: #fff; color: #666; border: 1px solid #ddd; border-radius: 5px; padding: 5px 10px; margin-right: 10px; font-size: 14px;}
+.videoEdu_wrap .tabs{width: 100%; text-align: center; margin-bottom: 30px;}
+.videoEdu_wrap .tabs a{background: #f6f7f9; float: left; width: 315px; display: block; border: 1px solid #e6e6e6; padding: 13px 0; font-size: 14px; margin-right: -1px;}
+.videoEdu_wrap .tabs a.active{background: #fff; color: #38bab2; border: 1px solid #000; border-bottom: none; font-weight: 500; margin-right: 0;}
 
+.videoEdu_wrap .items{text-align: right;}
+.videoEdu_wrap .items .item_sort{display: inline-block; margin: 20px 0;}
+.videoEdu_wrap .items .item_sort select{padding: 5px 10px; outline: none; border: 1px solid #e6e6e6; width: 130px; color: #888; font-size: 15px;}
 
-#main .container{width: 1080px; }
-.ncs_edu{background: rgb(228, 207, 248); width: 100%; height: 1000px;}
-.ncs_edu .ncs_edu_tit{background: url(../img/잡아바홈화면/직업훈련/인적성ncs교육/header_tit08.png) no-repeat;}
-.ncs_edu ul{}
-.ncs_edu ul li{float: left;}
-.ncs_edu ul li a{width: 250px; height: 224px; border: 1px solid gainsboro; border-radius: 10px; background: #fff; display: inline-block; margin-right: 26px; padding: 20px; letter-spacing: -1px; color: rgb(61, 61, 61);}
-.ncs_edu ul li a:hover{border: 2px solid #0b65c1;}
-.ncs_edu ul li:nth-child(4n) a{margin-right: 0;}
-.ncs_edu ul li a span{display: inline-block;}
-.ncs_edu ul li a span.label{background: #0b65c1; border-radius: 5px; color: #fff; padding: 5px 10px; font-size: 14px;}
-.ncs_edu ul li a span.tit{width: 100%; border-bottom: 1px dotted rgb(199, 199, 199); padding: 20px 0; font-size: 16px;}
-.ncs_edu ul li a span.text{padding: 20px 0; font-size: 14px; width: 100%;}
-.ncs_edu ul li a span .bu{border: 1px solid #0b65c1; border-radius: 3px; padding: 0 10px; margin-right: 5px;}
-.ncs_edu ul li a span span{}
-.ncs_edu ul li a span.hit{padding-top: 5px;}
+.videoEdu_wrap .items .items_box{text-align: left;}
+.videoEdu_wrap .items .items_box ul{}
+.videoEdu_wrap .items .items_box ul li{width: 228px; float: left; margin-right: 30px; margin-bottom: 30px;}
+.videoEdu_wrap .items .items_box ul li:nth-child(5n){margin-right: 0;}
+.videoEdu_wrap .items .items_box ul li a .img_wrap{border-radius: 10px; margin-bottom: 15px; position: relative;}
+.videoEdu_wrap .items .items_box ul li a .img_wrap img{border-radius: 10px; width: 228px; height: 145px;}
+.videoEdu_wrap .items .items_box ul li a .img_wrap .runtime{position: absolute; bottom: 4px; left: 0; width: 68px; height: 20px; background: rgba(0,0,0,.6); border-bottom-left-radius: 10px; border-top-right-radius: 10px;}
+.videoEdu_wrap .items .items_box ul li a .img_wrap .runtime span{position: relative; color: #fff; padding-left: 25px; font-size: 12px;}
+.videoEdu_wrap .items .items_box ul li a .img_wrap .runtime span::before{content: ''; position: absolute; width: 10px; height: 10px; top: 50%; left: 8px; transform: translateY(-50%); background: url(../img/잡아바홈화면/직업훈련/time_icon.png) no-repeat;}
+.videoEdu_wrap .items .items_box ul li a .item_text_wrap .state{color: #fff; font-weight: bold; font-size: 12px; padding: 3px 15px; border-radius: 5px;}
+.videoEdu_wrap .items .items_box ul li a .item_text_wrap .state.hot{background: #f62626;}
+.videoEdu_wrap .items .items_box ul li a .item_text_wrap .state.new{background: #00a8cd;}
+.videoEdu_wrap .items .items_box ul li a .item_text_wrap .item_title{font-size: 15px; margin-top: 10px; line-height: 1.3; color: #333; margin-bottom: 20px;}
+.videoEdu_wrap .items .items_box ul li a .item_text_wrap .item_count{}
+.videoEdu_wrap .items .items_box ul li a .item_text_wrap .item_count span{color: #666; font-size: 14px; position: relative; margin-right: 15px;}
+.videoEdu_wrap .items .items_box ul li a .item_text_wrap .item_count span:first-child::after{content: ''; position: absolute; width: 1px; height: 13px; background: #ccc; right: -12px; top: 50%; transform: translateY(-50%);}
+.videoEdu_wrap .items .items_page{text-align: center; padding: 20px 0 50px;}
+.videoEdu_wrap .items .items_page a{font-size: 13px; margin: 10px 25px; color: #666;}
+.videoEdu_wrap .items .items_page a:hover{color: #000; font-weight: bold;}
+.videoEdu_wrap .items .items_page a.page_active{font-weight: bold; position: relative; color: #000;}
+.videoEdu_wrap .items .items_page a.page_active::after{content: ''; position: absolute; width: 18px; height: 2px; background: #000; bottom: -5px; left: 50%; transform: translateX(-50%);}
 
-..ncs_edu .big_arr_l{}
-..ncs_edu .big_arr_r{}
+hr{border: none; border-top: 1px solid #ccc;}
 
-
+.videoEdu_wrap .dream{margin-top: 40px;}
+.videoEdu_wrap .dream p{font-size: 16px; margin-left: 60px; margin-bottom: 30px; position: relative;}
+.videoEdu_wrap .dream p::before{content: ''; position: absolute; width: 46px; height: 46px; top: 50%; left: -58px; transform:translateY(-50%); background: url(../img/잡아바홈화면/직업훈련/dream.png) no-repeat;}
+.videoEdu_wrap .dream p a span{color: #2660b6;}
+.videoEdu_wrap .dream .dream_box ul li{width: 228px; float: left; margin-right: 30px; margin-bottom: 30px;}
+.videoEdu_wrap .dream .dream_box ul li:nth-child(5n){margin-right: 0;}
+.videoEdu_wrap .dream .dream_box ul li a .img_wrap{border-radius: 10px; margin-bottom: 15px; position: relative;}
+.videoEdu_wrap .dream .dream_box ul li a .img_wrap img{border-radius: 10px; width: 228px; height: 145px;}
+.videoEdu_wrap .dream .dream_box ul li a .img_wrap .runtime{position: absolute; bottom: 4px; left: 0; width: 68px; height: 20px; background: rgba(0,0,0,.5); border-bottom-left-radius: 10px; border-top-right-radius: 10px;}
+.videoEdu_wrap .dream .dream_box ul li a .img_wrap .runtime span{position: relative; color: #fff; padding-left: 25px; font-size: 12px;}
+.videoEdu_wrap .dream .dream_box ul li a .img_wrap .runtime span::before{content: ''; position: absolute; width: 10px; height: 10px; top: 50%; left: 8px; transform: translateY(-50%); background: url(../img/잡아바홈화면/직업훈련/time_icon.png) no-repeat;}
+.videoEdu_wrap .dream .dream_box ul li a .dream_title{font-size: 15px; line-height: 1.3;}
+.videoEdu_wrap .dream .dream_page{text-align: center; padding: 20px 0 50px;}
+.videoEdu_wrap .dream .dream_page a{font-size: 13px; margin: 10px 25px; color: #666;}
+.videoEdu_wrap .dream .dream_page a:hover{color: #000; font-weight: bold;}
+.videoEdu_wrap .dream .dream_page a.page_active{font-weight: bold; position: relative; color: #000;}
+.videoEdu_wrap .dream .dream_page a.page_active::after{content: ''; position: absolute; width: 18px; height: 2px; background: #000; bottom: -5px; left: 50%; transform: translateX(-50%);}
 
 
 
